@@ -1,18 +1,18 @@
-## Step-by-step Solution
+# 📋 Step-by-step Solution
 
-### Step 1: Data Collection and Preparation
+## 📊 Step 1: Data Collection and Preparation
 
-#### Overview
+### 🎯 Overview
 This step focuses on creating and preparing a comprehensive dataset for anomaly detection analysis. We establish a synthetic but realistic server monitoring scenario to demonstrate how DevOps/SRE teams can implement automated anomaly detection systems for production environments.
 
-#### Data Source: [server_metrics.csv](./server_metrics.csv)
+### 📁 Data Source: [server_metrics.csv](./server_metrics.csv)
 - **Format**: CSV file with timestamp and CPU usage columns
 - **Time Range**: 24 hours (August 1, 2025, 00:00 to 23:00)
 - **Sampling Frequency**: Hourly measurements
 - **Normal CPU Range**: 14-22% utilization
 - **Anomalies**: Two significant spikes at 90% and 95% CPU usage
 
-#### Key Questions and Answers
+### ❓ Key Questions and Answers
 
 **1. Where did the data come from?**
 The data is synthetically generated to simulate realistic server CPU usage patterns. This approach allows us to:
@@ -33,7 +33,7 @@ This dataset simulates common production scenarios where:
 - **Pattern recognition** is crucial for proactive incident response and system optimization
 - **Historical trending** helps establish baselines for normal system behavior
 
-#### Data Analysis Summary
+### 📈 Data Analysis Summary
 
 **Dataset Characteristics:**
 - **Total data points**: 24 measurements (1 per hour)
@@ -48,43 +48,40 @@ This dataset simulates common production scenarios where:
 - **Standard deviation**: High due to anomalies
 - **Anomaly magnitude**: 4-5x higher than normal baseline
 
-**Why this matters for DevOps/SRE:**
-1. **Baseline establishment**: Understanding normal operating ranges
-2. **Threshold setting**: Determining when alerts should trigger
-3. **Pattern recognition**: Identifying unusual system behavior
-4. **Incident response**: Quick detection enables faster resolution
-5. **Capacity planning**: Understanding resource utilization trends
+### 🚀 DevOps/SRE Value
+- **Baseline establishment**: Understanding normal operating ranges
+- **Threshold setting**: Determining when alerts should trigger
+- **Pattern recognition**: Identifying unusual system behavior
+- **Incident response**: Quick detection enables faster resolution
+- **Capacity planning**: Understanding resource utilization trends
 
 ---
 
-### Step 2: Data Exploration and Visualization
+## 📊 Step 2: Data Exploration and Visualization
 
-#### Overview
+### 🎯 Overview
 Explored the dataset through visualization to identify patterns and visually detect anomalies before applying machine learning algorithms.
 
-#### Implementation: [anomaly_detection.ipynb](./anomaly_detection.ipynb)
+### 💻 Implementation: [anomaly_detection.ipynb](./anomaly_detection.ipynb)
 - **Cell 1**: Data loading with comment handling and initial exploration
 - **Cell 2**: Threshold-based detection with enhanced visualization and debugging
 
-#### Key Actions Performed
+### ⚡ Key Actions Performed
 1. **Data Loading**: Loaded CSV with proper timestamp parsing and comment cleanup
 2. **Statistical Analysis**: Generated summary statistics and anomaly detection metrics
 3. **Visualization**: Created time-series plot with threshold-based anomaly detection
 4. **Enhancement**: Added annotations, reference lines, and professional styling
 
-#### Results Achieved
+### 🏆 Results Achieved
 - **Data Loaded**: 24 hours of hourly CPU measurements (24 rows × 2 columns)
 - **Anomalies Detected**: 2 outliers at 08:00 (90% CPU) and 18:00 (95% CPU)
 - **Detection Method**: Threshold-based approach (CPU > 50%)
 - **Accuracy**: 100% detection rate (2 true positives, 0 false positives/negatives)
 
-#### Visualization Output
+- **Visualization Output**: ![CPU Anomaly Detection Plot](./plots//threshold_plot.png)
 
-![CPU Anomaly Detection Plot](./threshold_plot.png)
 
-*Enhanced anomaly detection showing CPU usage over time with clearly marked anomalies*
-
-#### Implementation Challenges Solved
+### 🛠️ Implementation Challenges Solved
 
 **1. Environment Setup Issue**
 - **Problem**: `ModuleNotFoundError: No module named 'pandas'` when running notebook cells
@@ -136,13 +133,13 @@ Explored the dataset through visualization to identify patterns and visually det
   ```
 - **Result**: Clear, prominent red markers with percentage labels and professional styling
 
-#### Key Insights
+### 💡 Key Insights
 - **Normal Baseline**: 14-22% CPU usage represents stable operation
 - **Anomaly Magnitude**: 4-5x higher than normal baseline
 - **Pattern**: Single-hour spikes without sustained high usage
 - **Timing**: Anomalies occurred at business hours (08:00, 18:00)
 
-#### DevOps/SRE Value
+### 🚀 DevOps/SRE Value
 - **Proactive Monitoring**: Visual detection enables early incident response
 - **Threshold Setting**: Statistical baselines inform alert configuration
 - **Pattern Recognition**: Understanding normal vs. abnormal system behavior
@@ -150,18 +147,18 @@ Explored the dataset through visualization to identify patterns and visually det
 
 ---
 
-### Step 3: Advanced Anomaly Detection Algorithms
+## 🤖 Step 3: Advanced Anomaly Detection Algorithms
 
-#### Overview
+### 🎯 Overview
 This step implements machine learning-based anomaly detection algorithms to provide more sophisticated and automated anomaly identification compared to simple threshold-based methods. We explore advanced algorithms that can learn normal patterns and detect complex anomalies without manual threshold setting.
 
-#### Implementation: [anomaly_detection.ipynb](./anomaly_detection.ipynb)
+### 💻 Implementation: [anomaly_detection.ipynb](./anomaly_detection.ipynb)
 - **Cell 3**: Isolation Forest algorithm implementation and analysis
 - **Cell 4**: One-Class SVM implementation and visualization
 - **Cell 5**: Comprehensive three-method comparison and final analysis
 
 
-#### Key ML Algorithms Applied
+### 🧠 Key ML Algorithms Applied
 
 **Why These Specific Algorithms?**
 
@@ -176,7 +173,7 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Principle**: Isolates anomalies by randomly partitioning data points
 - **Library**: scikit-learn (`sklearn.ensemble.IsolationForest`)
 - **Why chosen**: Excellent for global anomalies, handles non-linear patterns, robust to noise
-- **Visualization Output**: ![Isolation Forest Plot](./isolation_forest_plot.png)
+- **Visualization Output**: ![Isolation Forest Plot](./plots//isolation_forest_plot.png)
 
 
 **2. One-Class SVM**
@@ -189,7 +186,7 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Principle**: Creates decision boundary around normal data points
 - **Library**: scikit-learn (`sklearn.svm.OneClassSVM`)
 - **Why chosen**: Conceptually simple, works well with small datasets, interpretable decision boundary
-- **Visualization Output**: ![One-Class SVM Plot](./one-class_SVM_plot.png)
+- **Visualization Output**: ![One-Class SVM Plot](./plots//one-class_SVM_plot.png)
 
 **Algorithm Selection Rationale**:
 1. **Beginner-Friendly**: Both algorithms are well-documented in scikit-learn with clear parameter meanings
@@ -198,20 +195,20 @@ We selected these two ML algorithms for their complementary characteristics and 
 4. **Complementary**: Isolation Forest finds global outliers, One-Class SVM focuses on boundary violations
 5. **Production-Ready**: Both algorithms scale well and are commonly used in industry
 
-#### Results Achieved
+### 🏆 Results Achieved
 - **Threshold Method**: 2 anomalies detected at hours 8 and 18 (CPU > 50%)
 - **Isolation Forest**: 3 anomalies detected at hours 7, 8, and 18
 - **One-Class SVM**: 2 anomalies detected at hours 2 and 7
 - **Algorithm Diversity**: Each method detected different anomaly patterns
 
-#### Detailed Analysis
+### 📊 Detailed Analysis
 
 **Three-Method Comparison Results:**
 - **Threshold ∩ Isolation Forest**: 2 common anomalies (high CPU spikes)
 - **Threshold ∩ One-Class SVM**: 0 common anomalies (different focus areas)
 - **Isolation Forest ∩ One-Class SVM**: 1 common anomaly (hour 7)
 - **All three methods agree**: 0 anomalies (shows algorithm diversity)
-- **Visualization Output**: ![Anomaly Comparison Plot](./comparision_plot.png)
+- **Visualization Output**: ![Anomaly Comparison Plot](./plots//comparision_plot.png)
 
 **Anomaly Detection Patterns:**
 - **Hour 2 (14% CPU)**: Only SVM detected (low boundary violation)
@@ -225,7 +222,7 @@ We selected these two ML algorithms for their complementary characteristics and 
 3. **Pattern-Based Detection**: ML algorithms detect contextual anomalies missed by simple thresholds
 4. **Algorithm Complementarity**: Different methods provide different perspectives on anomalies
 
-#### Implementation Challenges Solved
+### 🛠️ Implementation Challenges Solved
 
 **1. Algorithm Parameter Tuning**
 - **Challenge**: Setting appropriate contamination rate for Isolation Forest
@@ -242,7 +239,7 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Solution**: Added anomaly score visualization and context analysis
 - **Outcome**: Low CPU usage (10%) identified as contextually anomalous
 
-#### DevOps/SRE Value
+### 🚀 DevOps/SRE Value
 - **Automated Detection**: Reduces manual threshold setting and maintenance
 - **Pattern Learning**: Adapts to system behavior changes over time
 - **Comprehensive Coverage**: Detects both high and low usage anomalies
