@@ -15,18 +15,21 @@ This step focuses on creating and preparing a comprehensive dataset for anomaly 
 ### ❓ Key Questions and Answers
 
 **1. Where did the data come from?**
+
 The data is synthetically generated to simulate realistic server CPU usage patterns. This approach allows us to:
 - Control the exact location and magnitude of anomalies for testing purposes
 - Create a baseline dataset without privacy concerns
 - Demonstrate anomaly detection techniques in a controlled environment
 
 **2. Why did I choose this data format?**
+
 - **Time-series structure**: Reflects how real monitoring systems collect metrics over time
 - **CSV format**: Universally compatible and easy to process with data science tools
 - **Hourly granularity**: Balances detail with simplicity for demonstration purposes
 - **Clear anomaly injection**: Two distinct anomalies (90% and 95% CPU) that clearly deviate from the normal range (14-22%)
 
 **3. How does this data reflect real-world DevOps/SRE challenges?**
+
 This dataset simulates common production scenarios where:
 - **CPU spikes** can indicate system overload, memory leaks, or resource-intensive processes
 - **Sudden anomalies** may signal security incidents, DDoS attacks, or application bugs
