@@ -25,10 +25,6 @@ Early detection of abnormal server behavior helps prevent outages and enables pr
 - **Algorithm Diversity**: Each method detected different anomaly patterns
 - **Zero Complete Agreement**: Shows complementary nature of different approaches
 
-### Visualizations
-![CPU Anomaly Detection](./cpu_anomaly_detection_plot.png)
-![Method Comparison](./anomaly_comparison_plot.png)
-
 ## What did I learn?
 - Threshold vs. ML-based anomaly detection approaches
 - **Two ML Algorithms**: Isolation Forest (tree-based) and One-Class SVM (boundary-based)
