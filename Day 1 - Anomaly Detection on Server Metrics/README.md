@@ -11,7 +11,7 @@ Early detection of abnormal server behavior helps prevent outages and enables pr
 
 ## 💻 Code & Implementation
 - **Notebook**: [anomaly_detection.ipynb](./anomaly_detection.ipynb) - Complete implementation
-- **Documentation**: [Step-by-Step-Guide.md](./Step-by-Step-Guide.md) - Detailed methodology and challenges
+- **Documentation**: [Step-by-Step-Solution.md](./Step-by-Step-Solution.md) - Detailed methodology and challenges
 
 ## 📈 Results
 
