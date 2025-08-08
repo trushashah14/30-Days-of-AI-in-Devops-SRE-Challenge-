@@ -1,6 +1,4 @@
-# 📊 Day 1: Anomaly Detection on Server Metrics
-
-**Date:** 2025-08-08
+# 📊 Day 1: Anomaly Detection on Server Metrics - Aug 8, 2025
 
 ## 📝 Description
 Applied anomaly detection to server metrics (CPU usage/time-series) using threshold-based methods and advanced ML algorithms (Isolation Forest & One-Class SVM) to identify outliers and potential incidents.
