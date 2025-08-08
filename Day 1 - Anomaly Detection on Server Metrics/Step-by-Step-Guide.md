@@ -64,7 +64,7 @@ Explored the dataset through visualization to identify patterns and visually det
 
 #### Implementation: [anomaly_detection.ipynb](./anomaly_detection.ipynb)
 - **Cell 1**: Data loading with comment handling and initial exploration
-- **Cell 2**: Enhanced visualization with debugging and anomaly highlighting
+- **Cell 2**: Threshold-based detection with enhanced visualization and debugging
 
 #### Key Actions Performed
 1. **Data Loading**: Loaded CSV with proper timestamp parsing and comment cleanup
@@ -80,7 +80,7 @@ Explored the dataset through visualization to identify patterns and visually det
 
 #### Visualization Output
 
-![CPU Anomaly Detection Plot](./cpu_anomaly_detection_plot.png)
+![CPU Anomaly Detection Plot](./threshold_plot.png)
 
 *Enhanced anomaly detection showing CPU usage over time with clearly marked anomalies*
 
@@ -157,8 +157,8 @@ This step implements machine learning-based anomaly detection algorithms to prov
 
 #### Implementation: [anomaly_detection.ipynb](./anomaly_detection.ipynb)
 - **Cell 3**: Isolation Forest algorithm implementation and analysis
-- **Cell 4**: Comparative visualization between threshold and Isolation Forest methods
-- **Cell 5**: One-Class SVM implementation and three-method comparison analysis
+- **Cell 4**: One-Class SVM implementation and visualization
+- **Cell 5**: Comprehensive three-method comparison and final analysis
 
 
 #### Key ML Algorithms Applied
@@ -176,6 +176,8 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Principle**: Isolates anomalies by randomly partitioning data points
 - **Library**: scikit-learn (`sklearn.ensemble.IsolationForest`)
 - **Why chosen**: Excellent for global anomalies, handles non-linear patterns, robust to noise
+- **Visualization Output**: ![Isolation Forest Plot](./isolation_forest_plot.png)
+
 
 **2. One-Class SVM**
 - **Type**: Unsupervised boundary-based anomaly detection
@@ -187,6 +189,7 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Principle**: Creates decision boundary around normal data points
 - **Library**: scikit-learn (`sklearn.svm.OneClassSVM`)
 - **Why chosen**: Conceptually simple, works well with small datasets, interpretable decision boundary
+- **Visualization Output**: ![One-Class SVM Plot](./one-class_SVM_plot.png)
 
 **Algorithm Selection Rationale**:
 1. **Beginner-Friendly**: Both algorithms are well-documented in scikit-learn with clear parameter meanings
@@ -208,6 +211,7 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Threshold ∩ One-Class SVM**: 0 common anomalies (different focus areas)
 - **Isolation Forest ∩ One-Class SVM**: 1 common anomaly (hour 7)
 - **All three methods agree**: 0 anomalies (shows algorithm diversity)
+- **Visualization Output**: ![Anomaly Comparison Plot](./comparision_plot.png)
 
 **Anomaly Detection Patterns:**
 - **Hour 2 (14% CPU)**: Only SVM detected (low boundary violation)
@@ -220,12 +224,6 @@ We selected these two ML algorithms for their complementary characteristics and 
 2. **Boundary Violations**: One-Class SVM identifies subtle deviations from normal patterns
 3. **Pattern-Based Detection**: ML algorithms detect contextual anomalies missed by simple thresholds
 4. **Algorithm Complementarity**: Different methods provide different perspectives on anomalies
-
-#### Visualization Output
-
-![Anomaly Comparison Plot](./anomaly_comparison_plot.png)
-
-*Three-panel comparison showing threshold method, Isolation Forest results, and anomaly scores*
 
 #### Implementation Challenges Solved
 
@@ -251,14 +249,3 @@ We selected these two ML algorithms for their complementary characteristics and 
 - **Scalability**: Can handle multiple metrics and complex patterns
 - **Continuous Improvement**: Algorithm learns from new data patterns
 
-#### Production Recommendations
-1. **Hybrid Approach**: Combine threshold and ML methods for comprehensive coverage
-2. **Alert Tuning**: Use ML confidence scores to prioritize alerts
-3. **Contextual Analysis**: Validate ML detections with domain knowledge
-4. **Regular Retraining**: Update models with recent operational data
-5. **Multi-metric Analysis**: Apply to CPU, memory, disk, and network metricssis.
-
-#### Results Summary
-- Successfully compared multiple detection methods
-- Validated anomaly detection accuracy across different algorithms
-- Generated comprehensive visualizations for method comparisonset to simulate real-world server monitoring scenarios. The dataset contains CPU usage metrics over a 24-hour period with intentionally injected anomalies to test our anomaly detection algorithms.
