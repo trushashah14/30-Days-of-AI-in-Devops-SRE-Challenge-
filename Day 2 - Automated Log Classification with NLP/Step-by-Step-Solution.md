@@ -26,7 +26,7 @@ We use pandas, numpy, matplotlib, seaborn for data and plots; nltk for text proc
 
 ## 2.1 Exploratory Data Analysis 📊
 
-### 1. Bar Plot: Log Level Distribution 📊
+### 1. Bar Plot: Log Level Distribution 
 ### Why?
 To check if our dataset is balanced across INFO, WARN, and ERROR.
 
@@ -36,7 +36,7 @@ The bar plot shows the count of each log level. If one bar is much taller, that 
 ### What did I get?
 My data showed about 70% INFO, 20% WARN, and 10% ERROR logs, confirming the intended distribution and highlighting that INFO logs are most common.
 
-### 2. Box Plot: Message Length by Log Level 📦
+### 2. Box Plot: Message Length by Log Level 
 ### Why?
 To understand if certain log levels tend to have longer or shorter messages.
 
@@ -46,7 +46,7 @@ The box plot shows the range and median message length for each log level, helpi
 ### What did I get?
 INFO and WARN logs had similar median lengths, while ERROR logs were slightly longer on average. There were some outliers, especially in ERROR logs, indicating a few very long messages.
 
-### 3. Histogram: Distribution of Message Lengths 📈
+### 3. Histogram: Distribution of Message Lengths 
 ### Why?
 To see how message lengths are spread for each log level.
 
@@ -56,7 +56,7 @@ The histogram shows the frequency of different message lengths, revealing if som
 ### What did I get?
 Most messages were between 40 and 80 characters, with ERROR logs showing a wider spread and more long messages than INFO or WARN.
 
-### 4. Scatter Plot: Log Levels Over Time 🕒
+### 4. Scatter Plot: Log Levels Over Time 
 ### Why?
 To visualize when log events occur and spot bursts or gaps.
 
@@ -80,7 +80,7 @@ INFO logs often included words like "success", "completed", "processed". WARN lo
 
 ---
 
-## 3. Text Preprocessing with NLP
+## 3. Text Preprocessing with NLP 🧹
 
 ### Why preprocess log messages?
 - Raw logs contain noise, special characters, and irrelevant words.
@@ -109,7 +109,7 @@ Most messages were shortened by 9% to 22%, with a median reduction of about 16%.
 
 ---
 
-## 4. Feature Extraction with TF-IDF
+## 4. Feature Extraction with TF-IDF 🧮
 
 ### Why use TF-IDF?
 - TF-IDF converts text into numerical features that reflect word importance.
@@ -148,7 +148,7 @@ ERROR logs were characterized by "failed", "exception", "unable". WARN logs by "
 
 ---
 
-## 5. Model Training and Evaluation
+## 5. Model Training and Evaluation 🤖
 
 ### Why train multiple models?
 - Different algorithms may perform better for different data.
@@ -181,7 +181,7 @@ Both models achieved perfect classification on the test data, with zero misclass
 
 ---
 
-## 6. Feature Importance Analysis
+## 6. Feature Importance Analysis 🔍
 
 ### Why analyze feature importance?
 - To understand which words/phrases help the model distinguish log levels.
@@ -234,7 +234,7 @@ Similar to Logistic Regression, the most important features matched the key word
 
 ---
 
-## 7. Testing on New Log Messages
+## 7. Testing on New Log Messages 📝
 
 ### Why test on new messages?
 - To check if the model generalizes to unseen data.
