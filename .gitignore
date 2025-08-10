@@ -1,0 +1,22 @@
+# Environment variables file with credentials
+.env
+
+# Log files and data directories
+**/logstash_data/
+**/logstash_logs/
+**/elasticsearch/data/
+
+# Generated data files
+**/synthetic_logs_for_elk.csv
+
+# IDE and system files
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/

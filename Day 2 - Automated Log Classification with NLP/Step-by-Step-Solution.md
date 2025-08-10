@@ -255,3 +255,85 @@ The table lists each new log message, its processed version, predicted log level
 The model correctly classified all new logs, with high confidence for each prediction. The table showed that INFO, WARN, and ERROR messages were all identified accurately, confirming the model's strong generalization to unseen data.
 
 ---
+
+## 8. ELK Stack Integration 📊
+
+### Why integrate with ELK?
+- To visualize log data in a powerful, interactive dashboard
+- For real-time monitoring and alerting on log patterns
+- To leverage Elasticsearch's full-text search capabilities
+- To build a complete log management solution
+
+### How?
+
+### 1. Install ELK Components 🛠️
+Open Command Prompt as Administrator (admin access required):
+
+```cmd
+choco install elasticsearch
+choco install logstash
+choco install kibana
+```
+
+### 2. Start Elasticsearch Service 🚀
+Open Command Prompt as Administrator (admin access required):
+
+```cmd
+net start elasticsearch-service-x64
+```
+
+Elasticsearch becomes available at http://localhost:9200
+
+### 3. Export Synthetic Logs to CSV 📄
+- Added code to export logs in the [log_classification.ipynb](./log_classification.ipynb) notebook:
+
+```python
+# Export synthetic logs to CSV for ELK ingestion
+logs_df.to_csv('synthetic_logs_for_elk.csv', index=False)
+print('Synthetic logs exported to synthetic_logs_for_elk.csv')
+```
+
+### 4. Create Logstash Configuration File 📝
+- Created a configuration file for Logstash to process our CSV data
+- See the complete configuration in [logstash_synthetic_logs.conf](./logstash_synthetic_logs.conf)
+
+### 5. Run Logstash with Configuration 🔄
+Open Command Prompt (regular user permissions):
+
+```cmd
+cd C:\ProgramData\chocolatey\lib\logstash\tools\logstash\bin
+logstash.bat --path.data "C:\Users\behip\Documents\logstash_data" --path.logs "C:\Users\behip\Documents\logstash_logs" -f "C:\Users\behip\Documents\Work\IT\30-Days-of-AI-in-Devops-SRE-Challenge-\Day 2 - Automated Log Classification with NLP\logstash_synthetic_logs.conf"
+```
+
+### 6. Verify Data Ingestion ✅
+Navigate to http://localhost:9200/synthetic-logs/_search?pretty to confirm logs were indexed in Elasticsearch.
+
+### 7. Start Kibana Service 📈
+Open Command Prompt (regular user permissions):
+
+```cmd
+cd C:\ProgramData\chocolatey\lib\kibana\tools\kibana-9.1.1\bin
+
+.\kibana.bat
+```
+
+Access Kibana interface at http://localhost:5601
+
+**Note:** Kibana is configured to connect to Elasticsearch using the `kibana_system` user, while Logstash uses the `elastic` superuser. These are different users with different permission levels in the Elasticsearch security model.
+
+### 8. Create Kibana Visualizations 📊
+- Open Kibana at http://localhost:5601
+- Create an index pattern for `synthetic-logs-*`
+- Use Discover, Visualize, and Dashboard features to explore your log data
+
+![Kibana Dashboard for Log Analysis](./kibana-dashboard.png)
+
+*Kibana dashboard showing log level distribution and message patterns over time*
+
+### What did I get?
+- A complete, end-to-end solution for automated log classification and visualization
+- Insights into log patterns, trends, and anomalies
+- Ability to monitor log data in real-time and receive alerts
+- Interactive dashboards showing log level distribution and time-based analysis
+
+---
