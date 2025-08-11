@@ -112,7 +112,7 @@ response = requests.post('http://localhost:11434/api/generate',
 - Must include progression from detection to resolution
 
 ### How?
-1. Created `example_logs.json` with a sample incident scenario
+1. Created `database_failures.json` with a sample incident scenario
 2. Included various log levels (INFO, WARN, ERROR)
 3. Structured a narrative showing:
    - Initial warnings (high memory usage)
@@ -140,7 +140,7 @@ A realistic test dataset that demonstrates:
 2. Started the application and downloaded the Llama 2 model
 3. Ran the script with sample data:
    ```
-   python incident_summarizer.py --input example_logs.json
+   python incident_summarizer.py --input database_failures.json
    ```
 4. Troubleshot connection issues:
    - Verified Ollama was running
