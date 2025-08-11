@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2024-01-18T02:15:33Z",
+    "level": "WARN",
+    "message": "Multiple failed login attempts detected for admin account from IP 203.87.126.44"
+  },
+  {
+    "timestamp": "2024-01-18T02:18:27Z",
+    "level": "WARN",
+    "message": "Unusual login pattern detected: 25 different accounts accessed from same IP range"
+  },
+  {
+    "timestamp": "2024-01-18T02:25:15Z",
+    "level": "WARN",
+    "message": "Abnormal API usage detected: 450 requests/minute to user data endpoints"
+  },
+  {
+    "timestamp": "2024-01-18T02:28:02Z",
+    "level": "ERROR",
+    "message": "Intrusion detection system alert: Potential credential stuffing attack in progress"
+  },
+  {
+    "timestamp": "2024-01-18T02:30:18Z",
+    "level": "ERROR",
+    "message": "Unauthorized database query attempts detected from application server app-08"
+  },
+  {
+    "timestamp": "2024-01-18T02:32:45Z",
+    "level": "ERROR",
+    "message": "User data API returning unusual volume of PII in responses to IP 203.87.126.44"
+  },
+  {
+    "timestamp": "2024-01-18T02:35:10Z",
+    "level": "INFO",
+    "message": "Security incident response protocol initiated"
+  },
+  {
+    "timestamp": "2024-01-18T02:36:25Z",
+    "level": "INFO",
+    "message": "IP range 203.87.126.0/24 blocked at firewall level"
+  },
+  {
+    "timestamp": "2024-01-18T02:38:17Z",
+    "level": "INFO",
+    "message": "Potentially compromised user accounts locked: 12 accounts affected"
+  },
+  {
+    "timestamp": "2024-01-18T02:40:03Z",
+    "level": "INFO",
+    "message": "Application server app-08 isolated from network for forensic investigation"
+  },
+  {
+    "timestamp": "2024-01-18T02:45:30Z",
+    "level": "INFO",
+    "message": "Security team analyzing data access patterns for potential data exfiltration"
+  },
+  {
+    "timestamp": "2024-01-18T03:15:22Z",
+    "level": "INFO",
+    "message": "Malicious script identified and removed from application server app-08"
+  },
+  {
+    "timestamp": "2024-01-18T03:30:45Z",
+    "level": "INFO",
+    "message": "Password reset initiated for all potentially affected user accounts"
+  },
+  {
+    "timestamp": "2024-01-18T04:10:18Z",
+    "level": "INFO",
+    "message": "Additional authentication factors enabled for administrative access"
+  },
+  {
+    "timestamp": "2024-01-18T04:45:33Z",
+    "level": "INFO",
+    "message": "Forensic analysis complete: 37 user records potentially accessed"
+  },
+  {
+    "timestamp": "2024-01-18T05:30:00Z",
+    "level": "INFO",
+    "message": "Security patches applied to vulnerable application components"
+  },
+  {
+    "timestamp": "2024-01-18T06:15:27Z",
+    "level": "INFO",
+    "message": "Affected customers being notified according to data breach protocol"
+  },
+  {
+    "timestamp": "2024-01-18T08:00:12Z",
+    "level": "INFO",
+    "message": "Security incident contained, enhanced monitoring implemented"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2023-11-05T14:32:18Z",
+    "level": "WARN",
+    "message": "Increased network latency detected: 250ms to cdn-provider"
+  },
+  {
+    "timestamp": "2023-11-05T14:35:27Z",
+    "level": "WARN",
+    "message": "Network packet loss rate at 15%, exceeding threshold of 5%"
+  },
+  {
+    "timestamp": "2023-11-05T14:38:45Z",
+    "level": "ERROR",
+    "message": "Connection timeout to primary load balancer (lb-prod-01)"
+  },
+  {
+    "timestamp": "2023-11-05T14:39:12Z",
+    "level": "ERROR",
+    "message": "Multiple service endpoints unreachable: auth-api, user-service, payment-gateway"
+  },
+  {
+    "timestamp": "2023-11-05T14:39:48Z",
+    "level": "ERROR",
+    "message": "External DNS resolution failing for multiple domains"
+  },
+  {
+    "timestamp": "2023-11-05T14:40:15Z",
+    "level": "ERROR",
+    "message": "Customer reports of website and application inaccessibility increasing"
+  },
+  {
+    "timestamp": "2023-11-05T14:41:30Z",
+    "level": "INFO",
+    "message": "Network team alerted, investigating potential ISP outage"
+  },
+  {
+    "timestamp": "2023-11-05T14:45:22Z",
+    "level": "INFO",
+    "message": "Failover to secondary data center initiated"
+  },
+  {
+    "timestamp": "2023-11-05T14:48:03Z",
+    "level": "INFO",
+    "message": "Traffic rerouting via backup network provider in progress"
+  },
+  {
+    "timestamp": "2023-11-05T14:52:37Z",
+    "level": "INFO",
+    "message": "ISP confirms major fiber cut affecting metro area network"
+  },
+  {
+    "timestamp": "2023-11-05T14:58:10Z",
+    "level": "INFO",
+    "message": "Services in secondary data center responding normally"
+  },
+  {
+    "timestamp": "2023-11-05T15:10:45Z",
+    "level": "INFO",
+    "message": "95% of customer traffic now routing through secondary data center"
+  },
+  {
+    "timestamp": "2023-11-05T16:25:18Z",
+    "level": "INFO",
+    "message": "ISP reports fiber repair in progress, ETA 2 hours"
+  },
+  {
+    "timestamp": "2023-11-05T18:30:02Z",
+    "level": "INFO",
+    "message": "Primary network connectivity restored, packet loss reduced to 0%"
+  },
+  {
+    "timestamp": "2023-11-05T18:45:30Z",
+    "level": "INFO",
+    "message": "Beginning traffic migration back to primary data center"
+  },
+  {
+    "timestamp": "2023-11-05T19:15:00Z",
+    "level": "INFO",
+    "message": "All systems operating normally, network incident resolved"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": "2023-09-22T10:05:18Z",
+    "level": "INFO",
+    "message": "Search service response time: 120ms (7-day average: 80ms)"
+  },
+  {
+    "timestamp": "2023-09-22T10:35:45Z",
+    "level": "INFO",
+    "message": "Search service response time: 180ms (7-day average: 80ms)"
+  },
+  {
+    "timestamp": "2023-09-22T11:05:22Z",
+    "level": "WARN",
+    "message": "Search service response time: 250ms, exceeding warning threshold of 200ms"
+  },
+  {
+    "timestamp": "2023-09-22T11:20:18Z",
+    "level": "WARN",
+    "message": "Database read latency increased to 150ms (baseline: 45ms)"
+  },
+  {
+    "timestamp": "2023-09-22T11:35:33Z",
+    "level": "WARN",
+    "message": "Search index refresh time increased to 2.5s (baseline: 0.8s)"
+  },
+  {
+    "timestamp": "2023-09-22T11:45:12Z",
+    "level": "WARN",
+    "message": "Cache hit ratio dropped to 65% (7-day average: 92%)"
+  },
+  {
+    "timestamp": "2023-09-22T12:05:40Z",
+    "level": "ERROR",
+    "message": "Search service response time: 500ms, exceeding critical threshold of 400ms"
+  },
+  {
+    "timestamp": "2023-09-22T12:10:15Z",
+    "level": "ERROR",
+    "message": "Customer reports of slow page loads increasing: 25 reports in last 10 minutes"
+  },
+  {
+    "timestamp": "2023-09-22T12:15:27Z",
+    "level": "INFO",
+    "message": "Performance incident response initiated, investigating search service degradation"
+  },
+  {
+    "timestamp": "2023-09-22T12:20:03Z",
+    "level": "INFO",
+    "message": "Identified large increase in search index size: 30% growth in 24 hours"
+  },
+  {
+    "timestamp": "2023-09-22T12:25:18Z",
+    "level": "INFO",
+    "message": "Search query analysis shows 45% increase in complex query patterns"
+  },
+  {
+    "timestamp": "2023-09-22T12:35:42Z",
+    "level": "INFO",
+    "message": "Provisioning additional search service capacity"
+  },
+  {
+    "timestamp": "2023-09-22T12:40:15Z",
+    "level": "INFO",
+    "message": "Implementing query optimization for top 10 most expensive search patterns"
+  },
+  {
+    "timestamp": "2023-09-22T12:55:33Z",
+    "level": "INFO",
+    "message": "Increasing cache size by 50% to improve hit ratio"
+  },
+  {
+    "timestamp": "2023-09-22T13:10:22Z",
+    "level": "INFO",
+    "message": "Search service response time improved to 300ms (still above baseline)"
+  },
+  {
+    "timestamp": "2023-09-22T13:30:05Z",
+    "level": "INFO",
+    "message": "Optimized search index partitioning implemented"
+  },
+  {
+    "timestamp": "2023-09-22T13:45:18Z",
+    "level": "INFO",
+    "message": "Cache hit ratio recovered to 85%, approaching normal levels"
+  },
+  {
+    "timestamp": "2023-09-22T14:05:27Z",
+    "level": "INFO",
+    "message": "Search service response time returned to 110ms (within normal parameters)"
+  },
+  {
+    "timestamp": "2023-09-22T14:15:30Z",
+    "level": "INFO",
+    "message": "Customer reports of slow page loads returned to baseline levels"
+  },
+  {
+    "timestamp": "2023-09-22T14:30:00Z",
+    "level": "INFO",
+    "message": "Performance degradation resolved, implementing permanent query optimizations"
+  }
+]
