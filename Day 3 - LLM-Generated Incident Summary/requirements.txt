@@ -1,0 +1,6 @@
+requests==2.31.0
+
+# Command line argument parsing
+argparse==1.4.0
+markdown==3.4.3
+jsonlines==3.1.0
