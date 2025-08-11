@@ -1,4 +1,4 @@
-# Day 3: LLM-Generated Incident Summary - 10 Aug ,2025
+# Day 3: LLM-Generated Incident Summary - Aug 10 ,2025
 
 ## Overview
 
