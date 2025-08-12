@@ -1,0 +1,13 @@
+{
+  "system_type": "api",
+  "details": {
+    "API Gateway": "Amazon API Gateway",
+    "Backend Services": "Lambda, ECS, EC2",
+    "Authentication": "JWT, OAuth2",
+    "Rate Limiting": "Enabled at 1000 req/min",
+    "Caching": "Enabled with 5 min TTL",
+    "Logging": "CloudWatch Logs",
+    "Monitoring": "CloudWatch Metrics, X-Ray",
+    "CDN": "CloudFront"
+  }
+}

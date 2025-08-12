@@ -1,0 +1,13 @@
+{
+  "system_type": "server",
+  "details": {
+    "Operating System": "Ubuntu 22.04 LTS",
+    "File System": "ext4",
+    "Storage Type": "AWS EBS volumes",
+    "Root Volume Size": "100GB",
+    "Data Volume Size": "500GB",
+    "Log Management": "logrotate, ELK Stack",
+    "Monitoring": "Prometheus Node Exporter",
+    "Backup System": "Daily snapshots"
+  }
+}

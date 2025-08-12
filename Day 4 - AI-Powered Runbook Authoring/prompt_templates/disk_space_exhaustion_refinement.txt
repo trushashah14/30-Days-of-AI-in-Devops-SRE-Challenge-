@@ -1,0 +1,11 @@
+Your previous runbook on database connection leaks was helpful, but we need more 
+specific details for our environment. Please enhance the runbook with:
+
+1. HikariCP connection pool specific monitoring commands and parameters
+2. Kubernetes pod restart procedures if needed
+3. More detailed Prometheus queries to track connection counts over time
+4. PostgreSQL-specific commands to identify leaked connections
+5. Example configuration changes for connection timeout and validation
+
+Also, add a troubleshooting decision tree to help engineers navigate different 
+root causes of connection leaks.

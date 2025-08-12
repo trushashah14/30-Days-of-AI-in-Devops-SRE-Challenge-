@@ -1,0 +1,13 @@
+{
+  "system_type": "database",
+  "details": {
+    "Database": "PostgreSQL 13",
+    "Application": "Java Spring Boot microservices",
+    "Deployment": "Kubernetes",
+    "Monitoring": "Prometheus and Grafana",
+    "Connection Pool": "HikariCP",
+    "Database Size": "500GB",
+    "Average Connections": "200-300",
+    "Max Connections": "500"
+  }
+}

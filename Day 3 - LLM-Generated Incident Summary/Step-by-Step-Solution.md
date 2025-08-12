@@ -26,7 +26,7 @@ By using a Large Language Model (LLM) to:
 
 ### How?
 - Downloaded the Ollama desktop application from ollama.ai
-- Used the Llama 2 model for its balance of quality and performance
+- Selected Llama 2 initially for development
 - Leveraged Ollama's API for programmatic interaction
 
 ## 3. Designing the Data Structure 📊
@@ -154,7 +154,31 @@ A reliable tool that:
 - Handles errors gracefully with helpful messages
 - Successfully generates incident summaries from logs
 
-## 8. Sample Output Analysis 📑
+## 8. Model Comparison and Selection 🤖
+
+### Why?
+- Different models have varying strengths and weaknesses
+- Need to find the best model for technical incident summarization
+- Must balance quality, accuracy, and level of detail
+
+### How?
+- Tested the same incident logs with multiple Ollama models:
+  - **CodeLlama**: Good for technical content but verbose in summaries
+  - **Llama 2**: Balanced approach with good technical understanding
+  - **Mistral**: Strong summarization but occasionally missed technical details
+  - **Phi**: Concise but sometimes lacked depth for complex incidents
+- Evaluated each model on:
+  - Technical accuracy
+  - Completeness of information
+  - Structure and readability
+  - Length and conciseness
+
+### What did I get?
+- Determined Llama 2 provided the best balance of accuracy, technical understanding, and summary quality
+- Found that model selection significantly impacts summary quality
+- Created a configuration option to allow users to specify their preferred model
+
+## 9. Sample Output Analysis 📑
 
 ### Why?
 - Need to evaluate summary quality
@@ -169,30 +193,14 @@ Generated a summary from example logs and analyzed:
 - Appropriate tone
 
 ### What did I get?
-A professional incident summary like:
+A professional incident summary saved to `summary_llama2_case1.md` that includes:
+- Clear title identifying the incident type
+- Concise summary with timeline and impact details
+- Chronological timeline with key events and timestamps
+- List of affected systems
+- Current status and next steps for prevention
 
-```markdown
-# Database Connectivity Incident Affecting Payment Processing
-
-## Summary
-On October 15, 2023, our payment processing system experienced an outage due to database connectivity issues. Starting at 08:12 UTC, we observed high memory usage on our API servers followed by database query timeouts, culminating in a complete connection failure to our primary database server. This resulted in payment transaction failures for customers. The incident was resolved at 08:30 UTC through failover to a replica database server and subsequent restoration of the primary server.
-
-## Timeline
-- **08:12 UTC**: Initial warning of high memory usage detected on api-server-03
-- **08:15 UTC**: Database queries began exceeding response time thresholds
-- **08:17 UTC**: Database connection timeout occurred, causing payment failures
-- **08:18 UTC**: Initiated failover to database replica server
-- **08:20 UTC**: Payment processing resumed with limited capacity
-- **08:30 UTC**: Full service restored after primary server recovery
-
-## Affected Systems
-- Payment Processing API
-- Database Services
-- Customer Payment Interface
-
-## Current Status
-RESOLVED. All systems are now operating normally with payment processing at 100% capacity. We have identified the root cause as memory pressure on the database server and are implementing monitoring improvements to detect similar issues earlier.
-```
+See the full example in the examples directory for details on formatting and structure.
 
 ## Results and Benefits
 

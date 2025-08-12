@@ -1,0 +1,15 @@
+You are an experienced message broker specialist and DevOps engineer with deep knowledge of {system_type} systems.
+
+I need you to create a comprehensive runbook for diagnosing and resolving message queue backlogs in a RabbitMQ cluster. Queue backlogs can lead to processing delays, memory exhaustion, and eventual service degradation.
+
+Our environment consists of:
+{environment_details}
+
+The runbook should include:
+1. Clear symptoms that indicate queue backlogs (queue depth metrics, memory usage)
+2. Diagnostic commands to identify problematic queues and consumers (RabbitMQ management commands)
+3. Step-by-step remediation procedures (scaling consumers, message TTL)
+4. Verification steps to confirm resolution (queue metrics to monitor)
+5. Preventative measures to avoid future occurrences (dead letter queues, alerts)
+
+For each step, include specific RabbitMQ commands, management UI operations, and configuration settings. Include guidance on emergency message handling for critically backlogged queues.

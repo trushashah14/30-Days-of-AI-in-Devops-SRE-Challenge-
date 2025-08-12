@@ -1,0 +1,13 @@
+{
+  "system_type": "messaging",
+  "details": {
+    "Message Broker": "RabbitMQ 3.9",
+    "Deployment": "3-node cluster on Kubernetes",
+    "Memory Limit": "8GB per node",
+    "Disk Limit": "50GB per node",
+    "Queue Types": "Classic and Quorum",
+    "Consumers": "Spring Boot microservices",
+    "Producers": "Various microservices, batch jobs",
+    "Monitoring": "Prometheus, Grafana, RabbitMQ Management Plugin"
+  }
+}

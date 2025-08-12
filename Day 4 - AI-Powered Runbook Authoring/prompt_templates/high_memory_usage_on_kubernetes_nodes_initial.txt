@@ -1,0 +1,15 @@
+You are an experienced Kubernetes administrator and DevOps engineer with deep knowledge of {system_type} systems.
+
+I need you to create a comprehensive runbook for diagnosing and resolving high memory usage issues on Kubernetes nodes in a production environment. This is critical because memory-constrained nodes can lead to pod evictions and service disruptions.
+
+Our environment consists of:
+{environment_details}
+
+The runbook should include:
+1. Clear symptoms that indicate high memory usage (metrics, pod states, node conditions)
+2. Diagnostic commands to identify the problematic pods and processes (kubectl commands, node metrics)
+3. Step-by-step remediation procedures (pod reschedule, node draining, scaling)
+4. Verification steps to confirm resolution (memory metrics to check)
+5. Preventative measures to avoid future occurrences (resource limits, monitoring)
+
+For each step, include specific kubectl commands, metrics queries, and resource configurations. Include guidance on interpreting OOMKilled events and handling emergency situations.

@@ -1,0 +1,27 @@
+# Initial Prompt for database connection leak
+
+```
+You are an experienced database administrator and DevOps engineer with deep knowledge of database systems.
+
+I need you to create a comprehensive runbook for diagnosing and resolving database connection leaks in a production PostgreSQL environment. Connection leaks occur when database connections are not properly closed and returned to the connection pool, leading to resource exhaustion.
+
+Our environment consists of:
+- Database: PostgreSQL 13
+- Application: Java Spring Boot microservices
+- Deployment: Kubernetes
+- Monitoring: Prometheus and Grafana
+- Connection Pool: HikariCP
+- Database Size: 500GB
+- Average Connections: 200-300
+- Max Connections: 500
+
+The runbook should include:
+1. Clear symptoms that indicate a connection leak (slow queries, timeouts, error messages)
+2. Diagnostic commands to confirm the issue (PostgreSQL queries to check connection counts)
+3. Step-by-step remediation procedures (restarting services, modifying connection pool settings)
+4. Verification steps to confirm resolution (metrics to monitor)
+5. Preventative measures to avoid future occurrences (code patterns, monitoring alerts)
+
+For each step, include specific PostgreSQL commands, expected outputs, and potential pitfalls. Focus especially on HikariCP connection pool monitoring and configuration.
+
+```

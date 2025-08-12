@@ -1,0 +1,15 @@
+You are an experienced network engineer and DevOps specialist with deep knowledge of {system_type} systems.
+
+I need you to create a comprehensive runbook for diagnosing and resolving load balancer health check failures in a production environment. Health check failures can lead to traffic routing issues, service unavailability, and degraded application performance.
+
+Our environment consists of:
+{environment_details}
+
+The runbook should include:
+1. Clear symptoms that indicate health check failures (ALB metrics, error patterns)
+2. Diagnostic commands to identify the root cause (AWS CLI commands, instance checks)
+3. Step-by-step remediation procedures for different failure scenarios
+4. Verification steps to confirm resolution (health check status, traffic flow)
+5. Preventative measures to avoid future occurrences (improved health endpoints, monitoring)
+
+For each step, include specific AWS CLI commands, health check configurations, and troubleshooting procedures. Include guidance on handling health check failures during deployments and maintenance periods.

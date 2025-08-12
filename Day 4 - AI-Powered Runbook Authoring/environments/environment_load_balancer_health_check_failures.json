@@ -1,0 +1,13 @@
+{
+  "system_type": "networking",
+  "details": {
+    "Load Balancer": "AWS Application Load Balancer",
+    "Backend Servers": "EC2 instances in Auto Scaling Group",
+    "Health Check Path": "/health",
+    "Health Check Interval": "30 seconds",
+    "Threshold": "2 consecutive failures",
+    "Timeout": "5 seconds",
+    "SSL/TLS": "Enabled with AWS Certificate Manager",
+    "Monitoring": "CloudWatch, Prometheus"
+  }
+}

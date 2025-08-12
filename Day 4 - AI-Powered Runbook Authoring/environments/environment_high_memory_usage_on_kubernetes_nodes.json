@@ -1,0 +1,13 @@
+{
+  "system_type": "kubernetes",
+  "details": {
+    "Kubernetes Version": "1.25",
+    "Node Type": "AWS EC2 m5.2xlarge",
+    "Worker Nodes": "10-15 nodes",
+    "Memory per Node": "32GB",
+    "Container Runtime": "containerd",
+    "Resource Quotas": "Enabled",
+    "Monitoring": "Prometheus, Grafana, DataDog",
+    "Autoscaling": "Cluster Autoscaler, HPA"
+  }
+}
