@@ -18,7 +18,7 @@ Create comprehensive, validated runbooks for multiple common failure modes by le
 
 Each runbook provides detailed detection, remediation, and verification steps specific to the failure scenario.
 
-## 💻 Code & Implementation
+## Code & Implementation 💻
 - [runbook_generator.py](./runbook_generator.py) - Main Python script for runbook generation
 - [Step-by-Step-Solution.md](./Step-by-Step-Solution.md) - Detailed implementation process
 - [environments/](./environments/) - Environment configuration files
