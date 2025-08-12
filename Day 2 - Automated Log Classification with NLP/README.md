@@ -35,6 +35,15 @@ Key outcomes:
 - **Seamless ELK integration**: Real-time log classification and visualization.
 - **Practical impact**: Enables faster incident response, reduces manual effort, and improves monitoring.
 
+## 🧠 What Did I Learn
+- **NLP for DevOps**: Applied natural language processing techniques specifically to infrastructure log analysis
+- **Text Preprocessing Pipeline**: Developed effective tokenization, normalization, and feature extraction workflows for log data
+- **Feature Engineering**: Created domain-specific features from log text that accurately predict severity levels
+- **Model Selection Trade-offs**: Evaluated multiple classifiers to balance accuracy, interpretability, and performance
+- **Feature Importance Analysis**: Used SHAP values and feature coefficients to understand classification decisions
+- **ELK Stack Integration**: Connected machine learning outputs with production monitoring systems
+- **Confidence Scoring**: Implemented methods to quantify prediction reliability for operational use
+- **Cross-validation Techniques**: Applied rigorous validation to ensure model generalization to new log patterns
 
 ## 📚 References & Resources
 
@@ -77,7 +86,7 @@ Key outcomes:
 - **Industry Example**: Cloud infrastructure teams monitoring service health and reliability via log classification.
 - **Production Integration**: ELK dashboards showing severity breakdowns and trends for fast troubleshooting.
 
-## 🚀 Next Steps/Improvements
+## Future Enhancements 🚀
 - **Semantic Analysis**: Implement deep learning models to understand log message context beyond keywords
 - **Unsupervised Learning**: Cluster similar log messages to discover unknown patterns
 - **Temporal Analysis**: Incorporate time-series analysis to detect sequence patterns in log events

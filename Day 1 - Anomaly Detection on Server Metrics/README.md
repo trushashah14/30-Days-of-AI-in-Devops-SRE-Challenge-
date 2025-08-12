@@ -76,7 +76,7 @@ Early detection of abnormal server behavior helps prevent outages and enables pr
 - **Industry Example**: Banks use SVM to detect trading system anomalies during market volatility
 - **Production Integration**: Triggers circuit breakers and failover mechanisms automatically
 
-## 🚀 Next Steps/Improvements
+## Future Enhancements 🚀
 - **Multi-Metric Analysis**: Extend to memory, disk I/O, network bandwidth, and response time metrics
 - **Real Production Data**: Apply algorithms to actual server logs with noise and missing data
 - **Ensemble Methods**: Combine multiple algorithms with weighted voting for improved accuracy

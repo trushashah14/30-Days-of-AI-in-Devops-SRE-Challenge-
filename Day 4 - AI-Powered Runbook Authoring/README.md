@@ -18,19 +18,20 @@ Create comprehensive, validated runbooks for multiple common failure modes by le
 
 Each runbook provides detailed detection, remediation, and verification steps specific to the failure scenario.
 
-## Files in this Directory 📁
-- `Step-by-Step-Solution.md`: Detailed walkthrough of the process
-- `runbook_generator.py`: Python script to automate runbook generation with Ollama
-- `environment.json`: Default environment configuration for runbook generation
-- `prompt_examples.md`: Example prompts used with the LLM
+## 💻 Code & Implementation
+- [runbook_generator.py](./runbook_generator.py) - Main Python script for runbook generation
+- [Step-by-Step-Solution.md](./Step-by-Step-Solution.md) - Detailed implementation process
+- [environments/](./environments/) - Environment configuration files
+- [prompt_templates/](./prompt_templates/) - Prompt templates for different failure modes
+
 
 ### Failure Mode Specific Files 🔧
-- `environment_database_connection_leak.json`: Custom environment details for database connection leaks
-- `environment_high_memory_usage_kubernetes.json`: Custom environment for Kubernetes memory issues
-- `environment_disk_space_exhaustion.json`: Custom environment for disk space problems
-- `environment_api_gateway_5xx_errors.json`: Custom environment for API gateway issues
-- `environment_rabbitmq_queue_backlog.json`: Custom environment for message queue backlog
-- `environment_load_balancer_health_check_failures.json`: Custom environment for load balancer issues
+- [environment_database_connection_leak.json](./environments/environment_database_connection_leak.json): Custom environment details for database connection leaks
+- [environment_high_memory_usage_kubernetes.json](./environments/environment_high_memory_usage_kubernetes.json): Custom environment for Kubernetes memory issues
+- [environment_disk_space_exhaustion.json](./environments/environment_disk_space_exhaustion.json): Custom environment for disk space problems
+- [environment_api_gateway_5xx_errors.json](./environments/environment_api_gateway_5xx_errors.json): Custom environment for API gateway issues
+- [environment_rabbitmq_queue_backlog.json](./environments/environment_rabbitmq_queue_backlog.json): Custom environment for message queue backlog
+- [environment_load_balancer_health_check_failures.json](./environments/environment_load_balancer_health_check_failures.json): Custom environment for load balancer issues
 
 ### Custom Prompt Templates 💬
 - `prompt_templates/`: Directory containing specialized prompts for each failure mode
@@ -50,74 +51,7 @@ For example:
 - `rabbitmq_queue_backlog/initial_runbook.md`
 - `load_balancer_health_check_failures/initial_runbook.md`
 
-## Example Failure Modes 🔍
 
-The script can generate runbooks for various common failure modes, not just database connection leaks. Here are some additional examples:
-
-### 1. High CPU/Memory Usage 🧠
-
-```bash
-python runbook_generator.py --failure-mode "high memory usage on Kubernetes nodes" --interactive
-```
-
-This will create a runbook covering:
-- Memory usage monitoring techniques
-- Pod memory limit configuration
-- Memory leak investigation
-- OOMKilled event remediation
-- Horizontal/vertical scaling options
-
-### 2. Disk Space Exhaustion 💾
-
-```bash
-python runbook_generator.py --failure-mode "disk space exhaustion on production servers"
-```
-
-This will generate a runbook addressing:
-- Disk usage monitoring
-- Log rotation and cleanup
-- Identifying large files and directories
-- Emergency space reclamation
-- Disk expansion procedures
-
-### 3. API Gateway Failures 🌐
-
-```bash
-python runbook_generator.py --failure-mode "API gateway 5xx errors"
-```
-
-This creates procedures for:
-- API gateway traffic investigation
-- Backend service health validation
-- Rate limiting configuration
-- Circuit breaker implementation
-- Fallback strategies
-
-### 4. Message Queue Backlog 📨
-
-```bash
-python runbook_generator.py --failure-mode "RabbitMQ message queue backlog"
-```
-
-This produces a runbook with:
-- Queue monitoring procedures
-- Consumer scaling options
-- Message TTL configuration
-- Dead letter queue management
-- Queue purging safeguards
-
-### 5. Load Balancer Failure ⚖️
-
-```bash
-python runbook_generator.py --failure-mode "load balancer health check failures"
-```
-
-This creates instructions for:
-- Health check configuration validation
-- Backend service investigation
-- Connection draining procedures
-- Failover mechanisms
-- DNS failover implementation
 
 ## Post-Generation Workflow 🔄
 
@@ -161,9 +95,33 @@ After generating the initial runbook (`initial_runbook.md`), follow these steps:
 - Enhanced technical accuracy through specialized prompts and environments
 - Consistent verification steps that are often overlooked in manual creation
 
-## Next Steps 🔮
+
+
+## What Did I Learn 🧠
+- **Prompt Engineering for Technical Documentation**: Crafting effective prompts for generating structured, technical runbooks requires understanding both LLM capabilities and domain-specific requirements
+- **Template-Based Generation**: Creating reusable templates significantly improves consistency and quality across different runbooks
+- **Environment-Specific Customization**: Tailoring content to specific technical environments yields more accurate and useful documentation
+- **Human-in-the-Loop Refinement**: Combining AI generation with human expertise creates superior documentation compared to either approach alone
+- **Model Selection Impact**: Different LLMs have varying strengths for technical writing tasks, with some excelling at technical accuracy while others at organization and clarity
+- **Failure Mode Specificity**: Each system failure type requires unique diagnostic approaches, commands, and remediation steps that can be captured in specialized templates
+- **Documentation Structure Matters**: Well-organized runbooks with clear sections for symptoms, diagnosis, remediation, and verification are more effective during incidents
+
+## References 📖
+
+### External Resources
+- [Ollama GitHub Repository](https://github.com/ollama/ollama)
+- [Ollama API Documentation](https://github.com/ollama/ollama/blob/main/docs/api.md)
+- [Site Reliability Engineering Book - Google](https://sre.google/sre-book/)
+- [Runbook Best Practices - Microsoft](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/hybrid/server/best-practices/runbook-maintenance)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+### Related Tools
+- [Ollama](https://ollama.ai/) - Local LLM running tool
+- [Markdown Guide](https://www.markdownguide.org/) - For runbook formatting
+- [Mermaid Diagrams](https://mermaid.js.org/) - For diagram creation in runbooks
+
+## Future Enhancements 🚀
 - Expand the template library to cover additional failure scenarios
 - Integrate the generated runbooks into an incident management system
 - Create a feedback loop to improve prompts based on real incident usage
 - Add support for diagram generation to enhance runbook clarity
-

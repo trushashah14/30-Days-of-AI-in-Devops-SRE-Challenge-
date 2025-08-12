@@ -6,6 +6,12 @@ This project leverages Ollama's local LLM capabilities to automatically generate
 
 The solution uses local LLM processing, keeping sensitive log data private while eliminating API costs. Various models are supported, allowing flexibility based on your specific needs and available computing resources.
 
+## 💻 Code & Implementation
+- [incident_summarizer.py](./incident_summarizer.py) - Main Python script for incident summary generation
+- [Step-by-Step-Solution.md](./Step-by-Step-Solution.md) - Detailed implementation process
+- [logs/](./logs/) - Sample log files used for testing
+
+
 ## Workflow 🔄
 
 1. **Log Collection**: Gather relevant logs from your monitoring systems in JSON format
@@ -19,6 +25,7 @@ The solution uses local LLM processing, keeping sensitive log data private while
 4. **Human Review**: Review and refine the generated summary before publication
 5. **Status Page Publication**: Publish the vetted summary to your public status page
 
+
 ## Conclusion ✅
 
 This solution dramatically reduces the time required to create professional incident summaries from 15-30 minutes to under 1 minute. By automating the initial analysis and draft creation, it allows incident responders to focus on resolution rather than communication overhead.
@@ -30,16 +37,17 @@ Key benefits include:
 - No ongoing API costs
 - Customizable to match your organization's communication style
 
-## Future Enhancements 🚀
 
-1. **Real-time Log Integration**: Connect directly to log aggregation systems like ELK/Splunk
-2. **Automated Status Updates**: Generate follow-up summaries as incidents progress
-3. **Custom Templates**: Allow organizations to define specific summary formats
-4. **Impact Assessment**: Add automatic severity classification and business impact analysis
-5. **Multi-model Pipeline**: Use specialized models for different aspects of log analysis
-6. **Historical Learning**: Improve summaries based on feedback from past incidents
-7. **Status Page API Integration**: Direct publishing to status page platforms
-8. **Multi-language Support**: Generate summaries in multiple languages for global operations
+
+## What Did I Learn 🧠
+- **Log Analysis Automation**: Transforming raw logs into meaningful narratives requires careful prompt design and contextual understanding
+- **Prompt Engineering Techniques**: Structuring prompts with clear sections and instructions significantly improves LLM output quality
+- **Model Comparison**: Different LLM models excel at different aspects of log analysis and summary generation
+- **Local LLM Deployment**: Running models locally with Ollama provides significant privacy benefits and eliminates API costs
+- **Structured Output Generation**: Guiding LLMs to produce consistently formatted summaries requires clear templates and examples
+- **Context Window Optimization**: Managing input size and prioritizing relevant log entries improves summary quality
+- **Human-in-the-Loop Design**: Creating systems that generate draft summaries for human review combines AI efficiency with human judgment
+- **Incident Communication Best Practices**: Effective incident summaries follow consistent patterns focusing on impact, timeline, and status
 
 ## Reference Documentation 📚
 
@@ -64,3 +72,13 @@ Key benefits include:
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 
 
+## Future Enhancements 🚀
+
+1. **Real-time Log Integration**: Connect directly to log aggregation systems like ELK/Splunk
+2. **Automated Status Updates**: Generate follow-up summaries as incidents progress
+3. **Custom Templates**: Allow organizations to define specific summary formats
+4. **Impact Assessment**: Add automatic severity classification and business impact analysis
+5. **Multi-model Pipeline**: Use specialized models for different aspects of log analysis
+6. **Historical Learning**: Improve summaries based on feedback from past incidents
+7. **Status Page API Integration**: Direct publishing to status page platforms
+8. **Multi-language Support**: Generate summaries in multiple languages for global operations
