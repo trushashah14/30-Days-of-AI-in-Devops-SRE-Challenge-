@@ -4,7 +4,7 @@ This document explains each step of the notebook, why it is needed, how it was i
 
 ---
 
-## Step 1: Introduction & Planning
+## Step 1: Introduction & Planning 📝
 
 **Why:**  
 Clarifies the goal: to forecast HTTP traffic spikes using time series modeling, with no cloud cost.
@@ -17,7 +17,7 @@ A clear roadmap for the notebook and project.
 
 ---
 
-## Step 2: Install Required Libraries
+## Step 2: Install Required Libraries 🧩
 
 **Why:**  
 Prophet, pandas, matplotlib, and plotly are needed for time series modeling, data manipulation, and visualization.
@@ -31,7 +31,7 @@ All necessary tools installed locally, ensuring no cloud cost.
 
 ---
 
-## Step 3: Import Libraries
+## Step 3: Import Libraries 📚
 
 **Why:**  
 To use the installed packages for data processing, modeling, and plotting.
@@ -44,22 +44,22 @@ Access to functions for data simulation, modeling, and visualization.
 
 ---
 
-## Step 4: Simulate Historical HTTP Request Data
+## Step 4: Simulate Historical HTTP Request Data 🕒
 
 **Why:**  
-No access to real CloudWatch data; simulation allows testing the forecasting workflow.
+No access to real CloudWatch data; simulation allows testing the forecasting workflow. 
 
 **How:**  
 - Generate hourly timestamps for 14 days.
 - Create a base value, add a sinusoidal pattern (daily cycles), a linear trend (growth), and random noise.
-- Store in a pandas DataFrame.
+- Store in a pandas DataFrame. 
 
 **What did I get:**  
 A realistic dataset mimicking actual traffic patterns, ready for modeling.
 
 ---
 
-## Step 5: Visualize Simulated Data
+## Step 5: Visualize Simulated Data 👀
 
 **Why:**  
 To understand the generated data and verify its realism before modeling.
@@ -72,7 +72,7 @@ A graph showing periodic spikes (daily cycles), an upward trend, and random fluc
 
 ---
 
-## Step 6: Train Prophet Model
+## Step 6: Train Prophet Model 🤖
 
 **Why:**  
 Prophet is designed for time series forecasting, capturing trends and seasonality.
@@ -85,7 +85,7 @@ A trained model that understands the underlying patterns in your traffic data.
 
 ---
 
-## Step 7: Forecast Next 24 Hours
+## Step 7: Forecast Next 24 Hours 🔮
 
 **Why:**  
 To predict future traffic and prepare for potential spikes.
@@ -98,7 +98,7 @@ A table of predicted values and confidence intervals for the next day.
 
 ---
 
-## Step 8: Visualize Predictions vs. Real Data
+## Step 8: Visualize Predictions vs. Real Data 🖼️
 
 **Why this graph was chosen:**  
 A time series line plot overlays historical and forecasted values, making it easy to compare past and future trends.  
@@ -115,7 +115,7 @@ A visual comparison of past traffic and future expectations, crucial for capacit
 
 ---
 
-## Difference Between Historical and Forecasted Values
+## Difference Between Historical and Forecasted Values ⚖️
 
 **Why is there a difference?**
 - Prophet smooths out random noise and focuses on underlying patterns (trend, seasonality).
@@ -128,7 +128,7 @@ A visual comparison of past traffic and future expectations, crucial for capacit
 
 ---
 
-## Step 9: Alternative Graph Visualizations
+## Step 9: Alternative Graph Visualizations 📊
 
 **Why:**  
 Different visualizations provide unique perspectives on model performance and forecast accuracy.
@@ -161,7 +161,7 @@ A comprehensive understanding of model performance, strengths, and weaknesses fr
 
 ---
 
-## Step 10: Model Improvement – More Data & Seasonality
+## Step 10: Model Improvement – More Data & Seasonality 🏋️
 
 **Why:**  
 The initial residual plot showed many prediction errors. Increasing the amount of training data and explicitly modeling daily seasonality helps Prophet better learn traffic patterns.
@@ -176,7 +176,7 @@ A model that better captures periodic spikes and trends, resulting in more accur
 
 ---
 
-## Step 11: Compare Residuals – Before and After Improvement
+## Step 11: Compare Residuals – Before and After Improvement 🆚
 
 **Why:**  
 Visual comparison of residuals before and after model improvement helps quantify accuracy gains.
