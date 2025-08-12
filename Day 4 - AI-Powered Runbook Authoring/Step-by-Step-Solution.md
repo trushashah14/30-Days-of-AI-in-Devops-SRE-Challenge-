@@ -162,7 +162,7 @@ python runbook_generator.py --failure-mode "disk space exhaustion" --model "mixt
 python runbook_generator.py --failure-mode "api gateway 5xx errors" --output-dir "./api_gateway_runbooks"
 ```
 
-![Command execution and output example](./images/command.png)
+![Command execution and output example](./command.png)
 
 #### Refining Existing Runbooks
 
