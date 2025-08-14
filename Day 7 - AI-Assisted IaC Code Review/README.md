@@ -11,12 +11,12 @@ Automatically review Terraform IaC files using tfsec (static analysis) and a loc
 - Compare tfsec and LLM feedback for actionable insights
 
 ## Code & Implementation 💻
-- **Notebook**: `iac_code_review.ipynb`  
+- **Notebook**: [`iac_code_review.ipynb`](./iac_code_review.ipynb)  
   Main workflow for finding, analyzing, and reviewing Terraform files using tfsec and Ollama LLM.
-- **Step-by-Step Solution**: `Step-by-Step-Solution.md`  
+- **Step-by-Step Solution**: [`Step-by-Step-Solution.md`](./Step-by-Step-Solution.md)  
   Detailed explanation of each notebook step, including rationale and insights.
 - **LLM & tfsec Outputs**:  
-  - `Iac analysis/*.md` – tfsec and Ollama review outputs for each Terraform file
+  - [`Iac analysis/`](./Iac%20analysis/) – tfsec and Ollama review outputs for each Terraform file
 
 ## Workflow 🔄
 1. **Find Files:** Locate all `.tf` files in the workspace
