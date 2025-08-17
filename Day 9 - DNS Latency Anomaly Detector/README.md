@@ -14,7 +14,7 @@ Detect DNS latency spikes using an autoencoder and alert via Slack. Visualize an
 ## Code & Implementation 💻
 - **README**: [`Day 9 - DNS Latency Anomaly Detector/README.md`](README.md)  
   Project overview, workflow, graph choices, and real-world use cases.
-- **Step-by-Step Solution**: [`Day 9 - DNS Latency Anomaly Detector/step-by-step-solution.md`](step-by-step-solution.md)  
+- **Step-by-Step Solution**: [`Day 9 - DNS Latency Anomaly Detector/Step-by-Step-Solution.md`](step-by-step-solution.md)  
   Detailed explanation of each notebook/code step, including rationale and insights.
 - **Notebook**: [`Day 9 - DNS Latency Anomaly Detector/dns_latency_anomaly_detector.ipynb`](dns_latency_anomaly_detector.ipynb)  
   Main workflow for DNS latency simulation, anomaly detection, visualization, and Slack alerting.
