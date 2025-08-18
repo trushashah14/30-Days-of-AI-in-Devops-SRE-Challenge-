@@ -167,7 +167,7 @@ Test the bot’s ability to answer status queries.
 
 **What did I get:**  
 Conversational, real-time status answers in Slack.
-- ![Slack Output](slack_output.png)  <!-- Screenshot of bot response in Slack -->
+- ![Slack Output](Slack_output.png)  <!-- Screenshot of bot response in Slack -->
 
 ---
 
