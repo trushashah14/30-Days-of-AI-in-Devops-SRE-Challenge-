@@ -1,0 +1,15 @@
+id,summary,description,category
+1,VPN is down,User cannot connect to VPN from remote location,network
+2,DB connection timeout,Application cannot connect to database,db
+3,Login page error,Users see 500 error on login page,app
+4,Slow query performance,Database queries are taking too long,db
+5,API returns 500,API endpoint returns 500 error for all requests,app
+6,Firewall rule misconfiguration,Network traffic blocked due to firewall,network
+7,UI bug in dashboard,Dashboard does not load for some users,app
+8,Site unreachable,Unable to access external website from office,network
+9,SQL deadlock error,Deadlock detected in database,db
+10,Router ping failure,Unable to ping router from office,network
+11,Backup job failed for customer DB,Nightly backup failed with error: 'Permission denied.' Affects customer data integrity.,db
+12,Payment gateway integration broken,Payment requests are not reaching the gateway. Timeout after 30s.,app
+13,High CPU usage on PostgreSQL cluster,CPU spikes observed on DB nodes during ETL jobs. Query optimization needed.,db
+14,DNS resolution delay in production,DNS queries are taking 2–3 seconds longer than usual. Affects service discovery.,network
