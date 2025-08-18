@@ -65,7 +65,7 @@ A trained ML model that predicts ticket category.
 
 ### Jira Component Setup
 - ✅ Created components: Network, Database, Application
-- ✅ Set Component Lead for each (currently you)
+- ✅ Set Component Lead for each (currently me)
 - ✅ Set Default Assignee to Component Lead for each component
 
 ### ⚠️ Jira Only Auto-Assigns at Issue Creation Time
