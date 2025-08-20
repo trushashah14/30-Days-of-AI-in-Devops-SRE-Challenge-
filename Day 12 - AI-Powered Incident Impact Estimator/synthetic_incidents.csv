@@ -1,3 +1,17 @@
 incident_id,start_time,end_time,affected_services,traffic,user_sessions,severity,root_cause,resolution_time
 SYN001,2025-09-05T10:00,2025-09-05T10:20,checkout,15000,12000,major,Cache server restart,20
+SYN002,2025-09-05T11:00,2025-09-05T11:30,login,9000,7000,minor,Config update,30
+SYN003,2025-09-05T12:00,2025-09-05T12:45,payment,18000,16000,critical,Payment gateway timeout,45
+SYN004,2025-09-05T13:00,2025-09-05T13:25,search,11000,9000,major,API rate limit,25
+SYN005,2025-09-05T14:00,2025-09-05T14:40,checkout,20000,17000,critical,DB failover,40
+SYN006,2025-09-05T15:00,2025-09-05T15:20,login,8000,6000,minor,Session cache miss,20
+SYN007,2025-09-05T16:00,2025-09-05T16:30,payment,14000,12000,major,Third-party API delay,30
+SYN008,2025-09-05T17:00,2025-09-05T17:50,search,17000,15000,critical,Service crash,50
+SYN009,2025-09-05T18:00,2025-09-05T18:35,checkout,16000,13000,major,Backend overload,35
+SYN010,2025-09-05T19:00,2025-09-05T19:30,login,10000,8000,minor,Token refresh error,30
+SYN011,2025-09-05T20:00,2025-09-05T20:25,payment,12000,10000,major,Network partition,25
+SYN012,2025-09-05T21:00,2025-09-05T21:45,search,13000,11000,critical,Service restart,45
+SYN013,2025-09-05T22:00,2025-09-05T22:30,checkout,14000,12000,minor,Slow query,30
+SYN014,2025-09-05T23:00,2025-09-05T23:20,login,11000,9000,major,Auth service bug,20
+SYN015,2025-09-06T00:00,2025-09-06T00:40,payment,17000,15000,critical,DB connection lost,40
 
