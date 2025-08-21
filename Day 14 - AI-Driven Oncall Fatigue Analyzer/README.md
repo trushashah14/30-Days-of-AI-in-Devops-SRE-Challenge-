@@ -1,4 +1,4 @@
-# Day 14: SRE Fatigue Analyzer 🧠 – Aug 21, 2025
+# Day 14: SRE Oncall Fatigue Analyzer 🧠 – Aug 21, 2025
 
 ## Challenge Description 🎯  
 This project was created to help SRE/DevOps teams measure and visualize on-call fatigue using real incident data. By quantifying fatigue and generating rotation suggestions, teams can proactively prevent burnout, improve fairness, and make better decisions about on-call schedules.
