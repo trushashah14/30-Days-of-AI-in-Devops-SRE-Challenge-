@@ -92,10 +92,3 @@ python update_changelog.py --old helm_old.yaml --new helm_new.yaml --type helm
 A complete changelog entry generated and saved.
 
 ---
-
-## What Did I Learn 🧩
-- LLMs can automate documentation with clarity and consistency
-- Python’s diff tools are powerful for infra change detection
-- Combining AI with DevOps workflows creates high-impact tools
-
----
