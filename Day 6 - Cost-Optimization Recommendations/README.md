@@ -65,6 +65,16 @@ Analyze last month's AWS billing data, identify high-cost services, and generate
 - **Advantage**: Further cost savings and vendor flexibility
 - **Industry Example**: Startups migrating workloads to open-source or other cloud providers
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Local LLM (Ollama, e.g. Llama2) was used to analyze AWS billing data and generate cost optimization recommendations.  
+  Prompt engineering improved the specificity and usefulness of AI-generated advice.
+
+**AI Technologies Used:**  
+- Llama2 (LLM, via Ollama)
+- Python (data analysis, orchestration)
+
 
 ## References 📖
 
@@ -78,3 +88,4 @@ Analyze last month's AWS billing data, identify high-cost services, and generate
 - Add anomaly detection for unexpected cost spikes
 - Extend to multi-account and multi-cloud cost analysis
 - Use LLM to generate budget alerts and cost-saving playbooks
+
