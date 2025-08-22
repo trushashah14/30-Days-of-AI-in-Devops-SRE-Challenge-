@@ -87,6 +87,17 @@ Empower SREs and network engineers to quickly diagnose and resolve DNS latency a
 **Industry Example:**  
 A media streaming platform uses DNS latency visualizations to optimize CDN routing. After visualizing anomalies, the team identifies a regional ISP issue and works with the provider to resolve it, improving streaming quality for millions of users.
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  An autoencoder (ML model, e.g. scikit-learn MLPRegressor) was trained on DNS latency data to learn normal patterns and detect anomalies.  
+  The model flags latency spikes as anomalies and triggers Slack alerts for SREs.
+
+**AI Technologies Used:**  
+- scikit-learn (MLPRegressor, autoencoder)
+- Python (data processing, orchestration)
+
+
 ## References 📖
 - [Matplotlib Documentation](https://matplotlib.org/)
 - [Seaborn Documentation](https://seaborn.pydata.org/)
@@ -101,4 +112,3 @@ A media streaming platform uses DNS latency visualizations to optimize CDN routi
 - Use advanced ML models for improved anomaly detection
 - Automate reporting and alerting based on visualization insights
 
----
