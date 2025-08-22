@@ -30,6 +30,18 @@ Early detection of abnormal server behavior helps prevent outages and enables pr
 - Data preprocessing and environment setup challenges
 - Multi-algorithm comparison and evaluation methods
 
+
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Machine learning algorithms (Isolation Forest and One-Class SVM from scikit-learn) were used to detect anomalies in server metrics.  
+  These models learned normal patterns and flagged outliers, automating anomaly detection beyond simple thresholding.
+
+**AI Technologies Used:**  
+- Scikit-learn (Isolation Forest, One-Class SVM)
+- Python (data processing, orchestration)
+
+
 ## References & Resources 📚
 
 ### General Anomaly Detection 🔍
@@ -82,5 +94,7 @@ Early detection of abnormal server behavior helps prevent outages and enables pr
 - **Ensemble Methods**: Combine multiple algorithms with weighted voting for improved accuracy
 - **Real-Time Processing**: Stream processing with Apache Kafka and real-time ML inference
 - **Dashboard Integration**: Grafana/Kibana dashboards with anomaly overlays and alert management
+
+
 
 
