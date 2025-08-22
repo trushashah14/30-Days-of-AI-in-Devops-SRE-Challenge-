@@ -81,6 +81,16 @@ Automatically triage and tag incoming tickets so teams can pick up relevant issu
 **Industry Example:**  
 A tech company receives a high volume of support tickets daily. Their ML-based triage system tags tickets with components like "Network", "Database", and "Application". Jira automation assigns tickets to the component lead, and team members pick up tickets from their queue, reducing triage time from hours to minutes.
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Machine learning (scikit-learn) was used to classify incident tickets into network, database, or application issues.  
+  NLP and ML enabled automated ticket triage and tagging for Jira integration.
+
+**AI Technologies Used:**  
+- scikit-learn (ML classifier)
+- Python (NLP, Jira API integration)
+
 ## References 📖
 - [Jira REST API Documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v2/)
 - [Jira Automation](https://support.atlassian.com/jira-software-cloud/docs/automate-your-jira-cloud-processes/)
@@ -93,4 +103,4 @@ A tech company receives a high volume of support tickets daily. Their ML-based t
 - Add support for multi-language ticket triage.
 - Integrate with other tools and platforms for broader automation.
 
----
+
