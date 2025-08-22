@@ -134,6 +134,17 @@ A SaaS DevOps team reviews k6 and Locust graphs after each synthetic load test. 
 
 ---
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Machine learning (ML) was used to analyze real API traffic logs and generate synthetic request sequences that mimic real-world patterns.  
+  ML resampling and statistical modeling enabled realistic load test data for k6 and Locust.
+
+**AI Technologies Used:**  
+- scikit-learn (ML for synthetic data generation)
+- Python (data processing, orchestration)
+
+
 ## References 📖
 - [k6 Documentation](https://k6.io/docs/)
 - [Locust Documentation](https://docs.locust.io/)
@@ -148,4 +159,4 @@ A SaaS DevOps team reviews k6 and Locust graphs after each synthetic load test. 
 - Use advanced ML models for even more realistic synthetic generation
 - Automate reporting and alerting based on visualization insights
 
----
+
