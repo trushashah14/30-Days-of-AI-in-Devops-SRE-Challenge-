@@ -102,6 +102,16 @@ Streamline cross-team communication by providing a single source of truth for sy
 **Industry Example:**  
 A healthcare SaaS provider uses the bot during a major platform upgrade. Multiple teams ask about API health and error rates in a shared Slack channel; the bot answers each query once, in a thread, so all teams stay aligned and focused on the upgrade without confusion or duplicate information.
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Local LLM (Ollama, e.g. Llama2) was used to summarize and clarify raw monitoring metrics for Slack bot responses.  
+  The bot uses LLM to transform API data into human-friendly answers.
+
+**AI Technologies Used:**  
+- Llama2 (LLM, via Ollama)
+- Python (Slack bot orchestration, API integration)
+
 ## References 📖
 - [Slack Socket Mode](https://api.slack.com/apis/connections/socket)
 - [Slack Bots with Python](https://slack.dev/python-slack-sdk/)
@@ -116,4 +126,4 @@ A healthcare SaaS provider uses the bot during a major platform upgrade. Multipl
 - Add authentication and role-based access
 - Use RAG or custom LLMs for deeper context
 
----
+
