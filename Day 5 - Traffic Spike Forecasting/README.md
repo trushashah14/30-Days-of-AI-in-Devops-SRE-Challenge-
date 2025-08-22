@@ -101,6 +101,17 @@ Forecast HTTP traffic spikes using time series modeling (Facebook Prophet) on si
 - Extend to multi-service and multi-region forecasting
 - Incorporate feedback loop for continuous model improvement
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Facebook Prophet (ML time series forecasting) was used to predict HTTP traffic spikes.  
+  ML models captured trends and seasonality, enabling proactive capacity planning.
+
+**AI Technologies Used:**  
+- Facebook Prophet (time series forecasting)
+- Python (data simulation, orchestration)
+
+
 ## References 📖
 
 ### Time Series Forecasting & Prophet
@@ -118,6 +129,7 @@ Forecast HTTP traffic spikes using time series modeling (Facebook Prophet) on si
 - [Time Series Forecasting Guide](https://otexts.com/fpp3/)
 - [Introduction to Time Series Analysis](https://www.machinelearningplus.com/time-series/time-series-analysis-python/)
 - [ARIMA Model Overview](https://www.statsmodels.org/stable/examples/notebooks/generated/tsa_arma_0.html)
+
 
 ---
 
