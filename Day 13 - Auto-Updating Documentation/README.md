@@ -73,6 +73,16 @@ An SRE team uses this tool to auto-document Helm chart updates. When replicas or
 “Updated replica count from 2 to 4. Changed image tag from v1.2.0 to v1.3.0.”  
 This gets appended to the changelog and shared with product teams.
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  LLM (Llama2 via Ollama) was used to automatically summarize infrastructure diffs (Helm/Terraform) into human-readable changelog entries.  
+  Python orchestrates the workflow and sends diffs to the LLM for documentation generation.
+
+**AI Technologies Used:**  
+- Llama2 (LLM, via Ollama for summarization)
+- Python (diff extraction, orchestration)
+
 ## References 📖
 - [Ollama](https://ollama.com/)
 - [LLaMA 2](https://ai.meta.com/llama/)
@@ -86,3 +96,4 @@ This gets appended to the changelog and shared with product teams.
 - Use structured output (e.g., JSON changelog entries)
 - Integrate with Git hooks or CI pipelines
 - Add risk scoring or impact estimation to summaries
+
