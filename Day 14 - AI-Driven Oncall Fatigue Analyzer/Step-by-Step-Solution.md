@@ -91,18 +91,3 @@ You want to present results clearly to stakeholders.
 Readable summaries and rotation plans in notebook format.
 
 ---
-
-## Step 7: Extend or Integrate 🚀  
-**Why:**  
-Make the tool more powerful and production-ready.
-
-**How:**  
-- Add fallback pairing logic
-- Export to HTML or Markdown
-- Integrate with incident APIs
-- Visualize fatigue trends over time
-
-**What did I get:**  
-A strategic, demo-ready fatigue analyzer for SRE teams.
-
----
