@@ -75,6 +75,18 @@ Estimate and communicate the business impact of incidents in real time.
 **Industry Example:**  
 An SRE team uses this tool to estimate the impact of checkout failures. ML predicts $10K revenue loss and 8K affected sessions. The LLM generates a summary for the incident report, saving hours of manual analysis.
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  ML regressors (scikit-learn) were trained to predict sessions affected and revenue loss for incidents.  
+  LLM (Llama2 via Ollama) was used to generate human-readable business impact summaries from ML predictions and incident metadata.
+
+**AI Technologies Used:**  
+- Scikit-learn (ML regression models)  
+- Llama2 (LLM, via Ollama for summarization)  
+- Python (for orchestration and data processing)
+
+
 ## References 📖
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
@@ -86,3 +98,4 @@ An SRE team uses this tool to estimate the impact of checkout failures. ML predi
 - Add confidence intervals to ML predictions
 - Use LLM to generate remediation suggestions
 - Build a Streamlit dashboard for real-time impact visibility
+
