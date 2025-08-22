@@ -118,6 +118,8 @@ After generating the initial runbook (`initial_runbook.md`), follow these steps:
 - **Industry Example**: Enterprises with hybrid cloud setups generating runbooks for each environment.
 - **Production Integration**: Automated selection of environment-specific runbooks during incidents.
 
+
+
 ## What Did I Learn 🧠
 - **Prompt Engineering for Technical Documentation**: Crafting effective prompts for generating structured, technical runbooks requires understanding both LLM capabilities and domain-specific requirements
 - **Template-Based Generation**: Creating reusable templates significantly improves consistency and quality across different runbooks
@@ -126,6 +128,18 @@ After generating the initial runbook (`initial_runbook.md`), follow these steps:
 - **Model Selection Impact**: Different LLMs have varying strengths for technical writing tasks, with some excelling at technical accuracy while others at organization and clarity
 - **Failure Mode Specificity**: Each system failure type requires unique diagnostic approaches, commands, and remediation steps that can be captured in specialized templates
 - **Documentation Structure Matters**: Well-organized runbooks with clear sections for symptoms, diagnosis, remediation, and verification are more effective during incidents
+
+
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Local LLM (Ollama, e.g. Llama2) was used to generate and refine technical runbooks for common failure scenarios.  
+  Prompt engineering and environment-specific templates enabled accurate, actionable documentation.
+
+**AI Technologies Used:**  
+- Llama2 (LLM, via Ollama)
+- Python (for orchestration and API calls)
+
 
 ## References 📖
 
