@@ -50,6 +50,18 @@ For more advanced analysis and richer feedback, commercial LLMs such as OpenAI's
 - **Advantage**: Fewer missed issues, more actionable feedback
 - **Industry Example**: Enterprises with strict compliance and security requirements
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Local LLM (Ollama, e.g. Llama2) was used to review Terraform IaC files for best practices and security improvements.  
+  Static analysis (tfsec) was combined with LLM feedback for comprehensive code review.
+
+**AI Technologies Used:**  
+- Llama2 (LLM, via Ollama)
+- tfsec (static analysis)
+- Python (orchestration)
+
+
 ## References 📖
 - [tfsec Documentation](https://tfsec.dev/)
 - [Ollama API Documentation](https://github.com/ollama/ollama/blob/main/docs/api.md)
@@ -65,3 +77,5 @@ For more advanced analysis and richer feedback, commercial LLMs such as OpenAI's
 - Integrate with PR comments and CI/CD pipelines
 - Add anomaly detection for infrastructure changes
 - Use LLM to generate remediation playbooks
+
+
