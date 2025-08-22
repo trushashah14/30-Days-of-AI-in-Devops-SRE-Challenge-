@@ -45,6 +45,19 @@ Key outcomes:
 - **Confidence Scoring**: Implemented methods to quantify prediction reliability for operational use
 - **Cross-validation Techniques**: Applied rigorous validation to ensure model generalization to new log patterns
 
+
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Natural Language Processing (NLP) and machine learning classifiers (scikit-learn) were used to automatically classify logs into severity levels (INFO, WARN, ERROR).  
+  Feature engineering and model training enabled accurate, automated log analysis.
+
+**AI Technologies Used:**  
+- scikit-learn (text classification models)
+- NLTK, spaCy (NLP preprocessing)
+- Python (data processing, orchestration)
+
+
 ## References & Resources 📚
 
 ### NLP & Text Classification 📊
@@ -92,3 +105,5 @@ Key outcomes:
 - **Temporal Analysis**: Incorporate time-series analysis to detect sequence patterns in log events
 - **Multi-language Support**: Extend NLP capabilities to handle logs in multiple programming languages and formats
 - **Causality Detection**: Identify cause-effect relationships between different log events
+
+
