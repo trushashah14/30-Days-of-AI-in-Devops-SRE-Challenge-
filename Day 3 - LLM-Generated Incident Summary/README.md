@@ -54,6 +54,17 @@ The solution uses local LLM processing, keeping sensitive log data private while
 - **Industry Example**: E-commerce and fintech teams reviewing AI-generated summaries before posting to customers.
 - **Production Integration**: Automated summary generation followed by manual approval workflow.
 
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  Local LLM (Ollama, e.g. Llama2) was used to automatically generate incident summaries from raw logs.  
+  Prompt engineering guided the LLM to produce structured, professional incident reports.
+
+**AI Technologies Used:**  
+- Llama2 (LLM, via Ollama)
+- Python (for orchestration and API calls)
+
+
 ## Reference Documentation 📚
 
 ### Ollama Resources 🧩
@@ -87,4 +98,6 @@ The solution uses local LLM processing, keeping sensitive log data private while
 6. **Historical Learning**: Improve summaries based on feedback from past incidents
 7. **Status Page API Integration**: Direct publishing to status page platforms
 8. **Multi-language Support**: Generate summaries in multiple languages for global operations
+
+
 
