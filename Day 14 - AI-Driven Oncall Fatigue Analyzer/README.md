@@ -68,7 +68,7 @@ An SRE team uses this tool to review monthly fatigue. Engineers with high scores
 - Export summaries to Markdown or HTML  
 - Include fallback pairing logic based on fatigue tiers
 
-<<<<<<< HEAD
+
 ## Where Was AI Used? 🤖
 
 - **AI Used:**  
@@ -80,6 +80,4 @@ An SRE team uses this tool to review monthly fatigue. Engineers with high scores
 - Scikit-learn (ML models: regressors, clustering, anomaly detection)
 - Llama2 (LLM, via Ollama for summarization and documentation)
 - Python (for orchestration and data processing)
-=======
----
->>>>>>> d946b232ba0e4b59854631cf7e398a24ef82a2ac
+
