@@ -21,7 +21,7 @@ A reproducible workflow for pipeline analysis and optimization.
 You need access to pipeline logs and API tokens.
 
 **How:**  
-- Add your repo and GitHub token to `config.yaml`.
+- Add your repo and GitHub token to `config.yaml` and .env file respectively.
 - Install required Python packages:
   ```sh
   pip install requests pandas seaborn scikit-learn scikit-optimize pyyaml matplotlib
