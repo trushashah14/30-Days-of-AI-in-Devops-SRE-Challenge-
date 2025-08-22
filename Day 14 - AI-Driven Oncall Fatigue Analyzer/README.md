@@ -1,4 +1,4 @@
-# Day 14: SRE Fatigue Analyzer 🧠 – Aug 21, 2025
+# Day 14: SRE Oncall Fatigue Analyzer 🧠 – Aug 21, 2025
 
 ## Challenge Description 🎯  
 This project was created to help SRE/DevOps teams measure and visualize on-call fatigue using real incident data. By quantifying fatigue and generating rotation suggestions, teams can proactively prevent burnout, improve fairness, and make better decisions about on-call schedules.
@@ -68,6 +68,7 @@ An SRE team uses this tool to review monthly fatigue. Engineers with high scores
 - Export summaries to Markdown or HTML  
 - Include fallback pairing logic based on fatigue tiers
 
+<<<<<<< HEAD
 ## Where Was AI Used? 🤖
 
 - **AI Used:**  
@@ -79,3 +80,6 @@ An SRE team uses this tool to review monthly fatigue. Engineers with high scores
 - Scikit-learn (ML models: regressors, clustering, anomaly detection)
 - Llama2 (LLM, via Ollama for summarization and documentation)
 - Python (for orchestration and data processing)
+=======
+---
+>>>>>>> d946b232ba0e4b59854631cf7e398a24ef82a2ac
