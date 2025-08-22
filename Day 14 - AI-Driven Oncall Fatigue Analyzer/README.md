@@ -68,4 +68,14 @@ An SRE team uses this tool to review monthly fatigue. Engineers with high scores
 - Export summaries to Markdown or HTML  
 - Include fallback pairing logic based on fatigue tiers
 
----
+## Where Was AI Used? 🤖
+
+- **AI Used:**  
+  ML logic (Python, pandas) was used to compute fatigue scores based on incident volume and sleep disruption.  
+  Tiered recommendations for rotation planning were generated using rule-based AI logic.  
+  LLM (Llama2 via Ollama) was used to generate human-readable summaries and explanations in notebooks and documentation.
+
+**AI Technologies Used:**
+- Scikit-learn (ML models: regressors, clustering, anomaly detection)
+- Llama2 (LLM, via Ollama for summarization and documentation)
+- Python (for orchestration and data processing)
