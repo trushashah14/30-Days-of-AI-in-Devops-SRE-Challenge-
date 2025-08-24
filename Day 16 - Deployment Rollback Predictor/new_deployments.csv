@@ -1,0 +1,3 @@
+Deployment,latency_ms,error_rate,cpu_usage,memory_usage
+Risky Deployment,310,0.45,85,90
+Safe Deployment,180,0.1,60,70
