@@ -1,0 +1,86 @@
+{
+    "affected_activity": "provisioning",
+    "assignment_group": "is-ng-vpc",
+    "assigned_to": "amul.sharma1@ibm.com",
+    "assistant_groups": [],
+    "cie_assigned_to": "nikolay.parvov@bg.ibm.com",
+    "audience": "private",
+    "caller": "ipops@us.ibm.com",
+    "close_code": "solved_permanently",
+    "close_notes": "Database was fixed manually by the development team \n\n\n(All Timestamps must be in UTC)\nIssue Summary: Fabcon server restart failed\nSME Findings: sme-team: SME Findings\nReason of Escalation:\nResolution Steps:\nSignature of Issue:\n{\"level\":\"fatal\",\"ts\":1750915722.6863387,\"logger\":\"FABCON\",\"caller\":\"manager/pi_init.go:268\",\"msg\":\"FABLOGALERT: unable to initialize db / get state from db\",\"fabconRequestID\":\"main.1:BlockingRun\",\"error\":\"unable to create in memory structure for SG member persistent structure: {[232 208 237 247 87 193 73 196 178 35 232 149 254 216 44 214] [202 35 58 115 103 236 75 180 148 188 152 211 33 203 12 201] {} [] 0}\",\"debianVersion\":\"3.161.87\",\"Log_Counter\":272}\nJira/Github/Other Tickets:\nCategory/Subcategory: is-sdn \tfabcon \tservice issue/responsivness\nTimeline Summary:\n2025-06-26 05:10:00 - IPOPS team started the CR CHG11837631\n2025-06-26 05:44:00 - Fabcon server restart failed on mon3-qz1-sr3-rk168-s18 https://ibm-cloudplatform.slack.com/archives/CQWH66SBY/p1750916690583999?thread_ts=1750913557.609509&cid=CQWH66SBY\n2025-06-26 05:50:00 - Verified the VSI running on the impacted node\n2025-06-26 06:04:00 - Core team created the incident\n2025-06-26 06:08:00 - Core upgraded to the incident to CIE\n2025-06-26 06:22:00 - Core tainted the node\n2025-06-26 06:57:00 - SDN team found that the falcon db is corrupted https://ibm-cloudplatform.slack.com/archives/C093JCGCWHX/p1750921037763049\n2025-06-26 07:12:00 - Prasad Joined the teams\n2025-06-26 07:20:00 - Yigal joined the meeting to check the falcon db\n2025-06-26 08:02 CORE is collecting the tech support bundlefrom both smartnics \n2025-06-26 08:15 The SDN team have identified an issue with a security group ID within the fabcon DB structure that prevents fabcon server from starting up correctly on DPUs on node mon3-qz1-sr3-rk168-s18.\nThe SDN team is currently testing the cleanup of the fabcon db locally .\n2025-06-26 08:22  Fabcon DB validation showed that the DB was inconsistent along with the SG ID\n2025-06-26 08:24 Fabcon DB was cleaned up in the dev environment and the validator now shows that the DB is consistent\nDev envornnment \n2025-06-26 08:42 The cleaned DB was tested in the dev environment. It crashed but this is likely due to the different TEP IP setup in the dev environment\n2025-06-26 08:46 The SDN dev team also replicated the crash with the faulty DB in the dev environment\n2025-06-26 09:06 CORE copied the clean DB and restarted fabcon on smartnic1 on host mon3-qz1-sr3-rk168-s18, fabcon server is now active on smartnic1\n2025-06-26 09:23  SDN dev cleaned up DB for smartinic 2 in dev environment\n2025-06-26 09:26 CORE copied the clean DB and restarted fabcon on smartnic2 on host mon3-qz1-sr3-rk168-s18, fabcon server is now active on smartnic2 and ccc list works as expected. The issue is considered mitigated at this point.\n\nResolution Runbook: Not Needed\nCaused by Change/Incident: CHG11837631\nWarroom:#warroom-vpc-inc9269346\nMeeting URL: https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmI2N2I3YTUtYTA2Ny00N2JiLWIwMWU[…]2c%22Oid%22%3a%222c96188a-3237-4b15-9524-757c93df766f%22%7d\nOutage Start: 2025-06-26 05:44:00\nOutage End: 2025-06-26  09:26\nDetection Time: 2025-06-26 05:44:00\nIdentification Time: 2025-06-26  08:15 \nMitigation Time:2025-06-26  09:26\nCIE pilot/co-pilot/squad names: \n@Lekshmanan S\n \n@amul.sharma1\n \n@Gopi.selvaraj\nJohn Haughton\nAniruddh Prakash\n\nCORE Manager names: \n@Ankit Rastogi\nJoby George\n\nExecutives(VPs) names:\nTeam mitigated the CIE: SDN dev team\nNext Update Time: ",
+    "contact_type": "monitoring_tool",
+    "crn_masks": [
+        "crn:v1:bluemix:public:is-sdn:mon04::::"
+    ],
+    "current_status_next_steps": "Issue is resolved",
+    "customer_facing_impact": "No impact expected. Data traffic will continue to function normally. Only the deletion of VSIs on this node will be impacted.",
+    "customers_impacted": "No users affected",
+    "child_incidents": 0,
+    "detection_source": "monitoring_tool",
+    "long_description": "IBM Cloud engineers have been alerted for an issue with Fabcon server restart failed in CA-MON-04 data center. Customers attempting to delete the VSIs from the dpu nodes mon3-qz1-sr3-rk168-s18-sn1 & mon3-qz1-sr3-rk168-s18-sn2 may experience longer than usual provisioning times or failed transactions.",
+    "outage_start": "2025-06-26T05:44:00Z",
+    "outage_end": "2025-06-26T09:26:00Z",
+    "recurring_event": false,
+    "severity": 3,
+    "short_description": "Fabcon server restart failed",
+    "technical_bridge_start": "2025-06-26T06:08:26Z",
+    "tribe": "Network - Overlay",
+    "problem": "PRB0095209",
+    "caused_by_change_number": "CHG11837631",
+    "caused_by_change": true,
+    "detection_time": "2025-06-26T05:44:00Z",
+    "identification_time": "2025-06-26T08:15:00Z",
+    "mitigation_time": "2025-06-26T09:26:00Z",
+    "was_customer_impacted": true,
+    "impact_adjustment_factor": 100,
+    "unit_type": "customer",
+    "units_affected": 0,
+    "total_units": 0,
+    "chronology": "Response Team Participants (add abbrev. role and name as needed)\r\n=====================\r\nSRE(s): Sanjay Nirankari (SDN), Sanjay Verma (SDN), Sivakumar Krishnasamy (STSM SDN), Sudhir Chandrasekhar(SDN)\r\nSW: P H SYEDA Amreen\r\nDEV: Yigal Bogin\r\nIAAS: JOHN HAUGHTON, ANDRE AUGUSTO GONZAGA\r\nMGR: PRIYA KANNAN\r\niPOPs:Amul Sharma, Aniruddh Prakash\r\nAVM: Nikolay Parvov\r\n\r\nSlack(s):  #warroom-vpc-inc9269346 - https://ibm.enterprise.slack.com/archives/C093JCGCWHX\r\nMS Teams:  https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmI2N2I3YTUtYTA2Ny00N2JiLWIwMWUtOThhZWY5MDNhZmNl%40thread.v2/0?context=%7b%22Tid%22%3a%22fcf67057-50c9-4ad4-98f3-ffca64add9e9%22%2c%22Oid%22%3a%222c96188a-3237-4b15-9524-757c93df766f%22%7d\r\n\r\n\r\nTimes in UTC\r\n[2025-Jun-26]\r\n05:44 AAA Impact Start\r\n06:08 AAA Sev3 CIE Confirmed\r\n06:10 AAA <Nikolay Parvov> Joining as AVM OnDuty\r\n\r\n06:15 SRE setting up required Env token and endpoint, next step will be to attain the node\r\n06:21 SRE tainted the node.\r\n06:37 Fabcon start and stop will not bring result, there is currently corruption in DB\r\n06:38 Issue is with security group\r\n06:50 SRE confirms best option is to migrate the VSI to other node, then to re-sync the IO bricks and Fabcon\r\n07:00 CORE  Node mon3-qz1-sr3-rk168-s18 has been tainted. It seems the Fabcon databse is corrupted. \r\n07:10 SRE is checking the logs for the missing security group for Fabcon\r\n07:23 SRE team is going to save a copy of the Fabcon DB, then they would try fixing it with Fab DB cleaner\r\n08:11 SRE Team is currently deploying node with required version 3.14 to do a test on local copy if the issue could be cleared by Fab DB cleaner\r\n08:12 Team is awaiting instructions how to validate with Fab DB validator and test the fit functionality \r\n08:28 SRE is checking the fit functionality\r\n08:30 AVM clarified, since the node is tainted, there should be no interruption or errors in other services\r\n08:44 SRE update the original DB is running, they will put the corrupted and check for the error\r\n08:53 IPOPs updates the clean DB, error - invalid memory address, error due to host's different config compared to production one\r\n08:58 Team is going to run the clean DB with MD5 in production, where the original load was\r\n09:04 IPOPs will restart the Fabcon\r\n09:07 Team is monitoring the Fabcon while re-syncing for mon3-qz1-sr3-rk168-s18-sn1\r\n09:11 Same should be repeated and applied for the other node mon3-qz1-sr3-rk168-s18-sn2 \r\n09:23 IPOPs repeating the steps for mon3-qz1-sr3-rk168-s18-sn2 \r\n09:25 IPOPs will restart the Fabcon, and try establishing connection\r\n09:26 Issue resolved\r\n\r\n\r\n=============================\r\n               FOR AVM REFERENCE\r\n=============================\r\nAVM asked for a pTask related to a change pre-check ",
+    "disable_pager": true,
+    "status": "confirmed_cie",
+    "state": "resolved",
+    "created": "2025-06-26T06:04:43Z",
+    "updated": "2025-06-30T13:13:41Z",
+    "href": "https://pnp-api-oss.cloud.ibm.com/v2/incidents/INC9269346",
+    "number": "INC9269346",
+    "linked_cases": 0,
+    "sys_id": "f7bd7ba29316ea50b6563ad97bba1050",
+    "resolved": "2025-06-26T09:38:51Z",
+    "resolved_by": "nikolay.parvov@bg.ibm.com",
+    "affected_ci_list": {
+        "href": "https://pnp-api-oss.cloud.ibm.com/v2/incidents/INC9269346/affectedcis"
+    },
+    "created_by": "ipops@us.ibm.com",
+    "disruption_time": 13320,
+    "comment_list": {
+        "href": "https://pnp-api-oss.cloud.ibm.com/v2/incidents/INC9269346/comments",
+        "comments": [
+            {
+                "comment": "AVM adjusts the CBC record to CHG11837631",
+                "added_by": "nikolay.parvov@bg.ibm.com",
+                "added_on": "2025-06-30T13:13:41Z"
+            },
+            {
+                "comment": "After Resolution Incident Update Justification(s):\n\nCategory - setting correct cat\r\nSubcategory - setting correct subcat\r\n\nA comment has been added to PRB0095209",
+                "added_by": "aniruddh.prakash@ibm.com",
+                "added_on": "2025-06-26T11:58:07Z"
+            },
+            {
+                "comment": "The fabcon databases for both the smartnics on host mon3-qz1-sr3-rk168-s18 were cleaned up in the SDN dev team in the dev environment. The cleaned up DBs were then transferred over to the respective smartnics along with a fabcon snap restart to remediate the issue on both the smartnics. This issue is currently resolved.",
+                "added_by": "ipops@us.ibm.com",
+                "added_on": "2025-06-26T09:41:11Z"
+            },
+            {
+                "comment": "PagerDuty: Q2B1DBX2ZLTSHR/TOC AVM was resolved by ServiceNow Application",
+                "added_by": "snowdev@us.ibm.com",
+                "added_on": "2025-06-26T09:40:02Z"
+            },
+            {
+                "comment": "Resolving PagerDuty incident: PDE7463777/Q2B1DBX2ZLTSHR",
+                "added_by": "system",
+                "added_on": "2025-06-26T09:40:01Z"
+            }
+        ]
+    }
+}

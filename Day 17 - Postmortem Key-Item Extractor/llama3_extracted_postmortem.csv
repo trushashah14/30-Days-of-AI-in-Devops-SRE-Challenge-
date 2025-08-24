@@ -1,0 +1,2 @@
+root_cause,action_items,owners
+Corrupted security group ID within the fabcon DB structure preventing fabcon server from starting up correctly on DPUs on node mon3-qz1-sr3-rk168-s18.,"['Cleaned up Fabcon DB in the SDN dev team in the dev environment', 'Transferred cleaned-up DBs to respective smartnics along with a fabcon snap restart']","['@nikolay.parvov@bg.ibm.com', '@amul.sharma1@ibm.com', '@Lekshmanan S', '@Gopi.selvaraj', '@Aniruddh Prakash', '@John Haughton']"
