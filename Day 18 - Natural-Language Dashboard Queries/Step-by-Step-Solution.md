@@ -11,97 +11,82 @@ PromQL is powerful but not intuitive for all users. Enabling natural language qu
 Use Llama 3 via Ollama to translate user requests into PromQL, then query Grafana and display results.
 
 **What did I get:**  
-A notebook workflow for conversational dashboard queries using local LLM inference.
+A fully automated workflow for conversational dashboard queries using local LLM inference and a connected monitoring stack.
 
 ---
 
-## ⚙️ Step 2: Environment Setup
+## ⚙️ Step 2: Install & Run Monitoring Stack
 
-**How:**  
-- Install Python packages:
+**Install Docker & Docker Compose:**
+```bash
+# On Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install docker.io docker-compose
+```
+
+- [docker-compose.yml and prometheus.yml](./)  
+  *(See this folder for actual files and configuration details)*
+
+**Start Prometheus, Grafana, and Node Exporter:**
+```bash
+docker-compose up -d
+```
+
+**Access services:**
+- Prometheus: [http://localhost:9090](http://localhost:9090)
+- Grafana: [http://localhost:3000](http://localhost:3000)
+- Node Exporter metrics: [http://localhost:9100/metrics](http://localhost:9100/metrics)
+
+---
+
+## 📄 Step 3: Connect Grafana to Prometheus
+
+- Log in to Grafana (`admin`/`admin` by default).
+- Go to **Settings → Data Sources → Add data source**.
+- Select **Prometheus** and set the URL to `http://prometheus:9090` (or `http://localhost:9090` if running locally).
+- Click **Save & Test**.
+
+---
+
+## 🖥️ Step 4: Create Node Exporter Metrics Dashboard
+
+- In Grafana, click **+ → Dashboard → Add new panel**.
+- Select your Prometheus data source.
+- Enter PromQL queries for CPU, memory, disk, network, etc.
+- Save the dashboard.
+
+---
+
+## 🤖 Step 5: LLM Integration – Automated Natural Query to PromQL to Grafana Workflow
+
+**Install Python packages:**
+```bash
+pip install pandas requests python-dotenv ipywidgets matplotlib
+```
+
+**Install and start Ollama:**
+- Download from [ollama.com](https://ollama.com/)
+- Start server:
   ```bash
-  pip install pandas requests python-dotenv
+  ollama serve
   ```
-- Install and start Ollama:
-  - Download from [ollama.com](https://ollama.com/)
-  - Start server:
-    ```bash
-    ollama serve
-    ```
 - Pull the Llama 3 model:
   ```bash
   ollama pull llama3
   ```
-- Set up `.env` file with:
-  ```
-  GRAFANA_API_KEY=your_grafana_api_key
-  GRAFANA_URL=http://localhost:3000
-  PROMETHEUS_UID=your_prometheus_uid
-  ```
 
-**What did I get?**  
-A secure, configurable environment for LLM-powered dashboard queries.
+**Set up `.env` file:**
+```
+GRAFANA_API_KEY=your_grafana_api_key
+GRAFANA_URL=http://localhost:3000
+GRAFANA_DS_UID=your_prometheus_uid
+GRAFANA_DASHBOARD_UID=your_dashboard_uid
+```
 
----
+**Run the notebook or script:**
+- Open `NLP_Dashboard_queries.ipynb` in Jupyter or VS Code, or run `NLP_Dashboard_queries.py`.
+- Enter natural language queries.
+- The workflow generates PromQL, queries Grafana, creates dashboard panels, and displays results (including visualizations).
 
-## 📄 Step 3: Data Preparation
-
-**How:**  
-- Ensure Prometheus is collecting metrics (e.g., `errors_total`).
-- Grafana is connected to Prometheus.
-- Store API keys and config in `.env` for security.
-
-**What did I get?**  
-Live metrics available for querying and a secure config setup.
-
----
-
-## 🧠 Step 4: Prompt Engineering
-
-**How:**  
-- Format prompts for Llama 3 to translate natural language to PromQL.
-- Example prompt in notebook:
-  ```
-  You are a PromQL expert. Convert the following natural-language query into a valid PromQL expression:
-  Query: "Show me last week's error rate"
-  PromQL:
-  ```
-
-**What did I get?**  
-Effective prompts for accurate query generation.
-
----
-
-## 🤖 Step 5: LLM Integration (Ollama Llama 3)
-
-**How:**  
-- Use Python to send the prompt to Ollama's Llama 3 model via REST API.
-- Stream and collect the model's response.
-- Extract PromQL from the LLM output.
-
-**What did I get?**  
-Automated PromQL generation from natural language queries.
-
----
-
-## 🛠️ Step 6: Query Grafana with PromQL
-
-**How:**  
-- Send the generated PromQL to Grafana using API credentials from `.env`.
-- Parse the Grafana response and extract time series data.
-
-**What did I get?**  
-Automated dashboard querying and data retrieval.
-
----
-
-## 💾 Step 7: Display Results
-
-**How:**  
-- Parse and display results in a pandas DataFrame for easy analysis.
-- Visualize time series data directly in the notebook.
-
-**What did I get?**  
-Clear, actionable dashboard results from natural language queries.
-
----
+Output in dashboard:
+![Output](image.png)
