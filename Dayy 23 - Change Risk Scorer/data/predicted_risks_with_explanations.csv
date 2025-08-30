@@ -1,0 +1,121 @@
+pr_id,lines_changed,files_changed,coverage,past_failures,risk_label,predicted_risk,risk_score,explanation
+PR_1,112,2,43.9,1,Medium,Medium,0.1,"Risk Level: Medium (0.10 confidence)
+    • Lines changed: 112
+    • Test coverage: 43.9%
+    • Deployment history: 1 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_2,445,12,96.93,1,Medium,Medium,0.03,"Risk Level: Medium (0.03 confidence)
+    • Lines changed: 445
+    • Test coverage: 96.93%
+    • Deployment history: 1 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_3,358,6,97.94,5,Medium,Medium,0.12,"Risk Level: Medium (0.12 confidence)
+    • Lines changed: 358
+    • Test coverage: 97.94%
+    • Deployment history: 5 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_4,280,2,88.5,3,Medium,Medium,0.04,"Risk Level: Medium (0.04 confidence)
+    • Lines changed: 280
+    • Test coverage: 88.5%
+    • Deployment history: 3 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_5,116,1,58.28,5,Medium,Medium,0.06,"Risk Level: Medium (0.06 confidence)
+    • Lines changed: 116
+    • Test coverage: 58.28%
+    • Deployment history: 5 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_6,81,12,45.86,5,Medium,Medium,0.06,"Risk Level: Medium (0.06 confidence)
+    • Lines changed: 81
+    • Test coverage: 45.86%
+    • Deployment history: 5 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_7,198,12,81.05,3,Medium,Medium,0.0,"Risk Level: Medium (0.00 confidence)
+    • Lines changed: 198
+    • Test coverage: 81.05%
+    • Deployment history: 3 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_8,30,17,66.41,0,Medium,Medium,0.0,"Risk Level: Medium (0.00 confidence)
+    • Lines changed: 30
+    • Test coverage: 66.41%
+    • Deployment history: 0 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_9,112,10,47.32,5,Medium,Medium,0.06,"Risk Level: Medium (0.06 confidence)
+    • Lines changed: 112
+    • Test coverage: 47.32%
+    • Deployment history: 5 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_10,131,16,69.71,4,Medium,Medium,0.04,"Risk Level: Medium (0.04 confidence)
+    • Lines changed: 131
+    • Test coverage: 69.71%
+    • Deployment history: 4 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_11,476,15,42.06,4,High,High,0.83,"Risk Level: High (0.83 confidence)
+    • Lines changed: 476
+    • Test coverage: 42.06%
+    • Deployment history: 4 failures
+    
+⚠️ This change touches critical files with low test coverage and a history of failed rollouts."
+PR_12,224,15,94.56,1,Medium,Medium,0.0,"Risk Level: Medium (0.00 confidence)
+    • Lines changed: 224
+    • Test coverage: 94.56%
+    • Deployment history: 1 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_13,340,19,55.53,4,High,High,0.74,"Risk Level: High (0.74 confidence)
+    • Lines changed: 340
+    • Test coverage: 55.53%
+    • Deployment history: 4 failures
+    
+⚠️ This change touches critical files with low test coverage and a history of failed rollouts."
+PR_14,468,12,79.75,1,Medium,Medium,0.06,"Risk Level: Medium (0.06 confidence)
+    • Lines changed: 468
+    • Test coverage: 79.75%
+    • Deployment history: 1 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_15,97,20,58.7,0,Medium,Medium,0.04,"Risk Level: Medium (0.04 confidence)
+    • Lines changed: 97
+    • Test coverage: 58.7%
+    • Deployment history: 0 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_16,382,3,71.2,3,Medium,Medium,0.09,"Risk Level: Medium (0.09 confidence)
+    • Lines changed: 382
+    • Test coverage: 71.2%
+    • Deployment history: 3 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_17,109,5,72.8,3,Medium,Medium,0.0,"Risk Level: Medium (0.00 confidence)
+    • Lines changed: 109
+    • Test coverage: 72.8%
+    • Deployment history: 3 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_18,369,19,51.09,3,High,High,0.83,"Risk Level: High (0.83 confidence)
+    • Lines changed: 369
+    • Test coverage: 51.09%
+    • Deployment history: 3 failures
+    
+⚠️ This change touches critical files with low test coverage and a history of failed rollouts."
+PR_19,161,7,98.18,4,Medium,Medium,0.03,"Risk Level: Medium (0.03 confidence)
+    • Lines changed: 161
+    • Test coverage: 98.18%
+    • Deployment history: 4 failures
+    
+⚠️ Moderate risk due to either size, coverage, or past failures."
+PR_20,140,9,86.51,0,Low,Low,0.0,"Risk Level: Low (0.00 confidence)
+    • Lines changed: 140
+    • Test coverage: 86.51%
+    • Deployment history: 0 failures
+    
+✅ Low risk: small change, good coverage, stable history."
