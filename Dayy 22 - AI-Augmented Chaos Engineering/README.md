@@ -1,4 +1,4 @@
-# Day 22: AI-Augmented Chaos Engineering ⚡ – Aug 28, 2025
+# Day 22: AI-Augmented Chaos Engineering ⚡ – Aug 29, 2025
 
 ## Challenge Description 🎯
 Use AI to design chaos experiments that target weak spots in your system. Feed system topology and incident data into an LLM, generate chaos scenarios, and run experiments with LitmusChaos or Gremlin.
