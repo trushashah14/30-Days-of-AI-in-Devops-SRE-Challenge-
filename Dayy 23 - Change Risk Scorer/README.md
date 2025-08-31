@@ -1,4 +1,4 @@
-# Day 23: Change Risk Scorer 🚦 – Aug 31, 2025
+# Day 23: Change Risk Scorer 🚦 – Aug 30, 2025
 
 ## Challenge Description 🎯
 Use AI to score the risk of proposed infrastructure or application changes before deployment. Integrate PR diff, test coverage, and deployment history to predict risk and explain reasoning.
