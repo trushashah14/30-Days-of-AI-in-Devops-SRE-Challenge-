@@ -14,11 +14,7 @@ Enable SRE/DevOps teams to automatically generate Python test scenarios for code
   Orchestrates extraction, LLM call, parsing, classification, rendering, and PDF export.
 - **Step-by-Step Solution:** [`Step-by-Step-Solution.md`](./Step-by-Step-Solution.md)  
   Detailed guide for workflow, logic, and troubleshooting.
-- **Supporting Modules:**  
-  - [`code_parser.py`](./code_parser.py): Extracts function schemas
-  - [`llm_driver.py`](./llm_driver.py): Handles LLM API calls and output parsing
-  - [`classifier.py`](./classifier.py): Classifies test types
-  - [`renderer.py`](./renderer.py): Renders HTML and exports PDF
+
 
 ## Workflow 🔄
 1. **Extract Function Schema:**  
