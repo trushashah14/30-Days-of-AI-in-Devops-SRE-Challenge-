@@ -2,36 +2,49 @@
 
 ---
 
-## Step 1: Extract Function Schema
+## Step 1: Introduction & Planning
 
 **Why:**  
-We need to understand the structure of the code to generate relevant tests.
+Manual test authoring is slow and error-prone. AI can automate scenario generation, improving coverage and speeding up reviews.
+
+**How:**  
+- Outline the workflow: extract function schema, prompt LLM, parse/classify tests, render HTML, export PDF.
+
+**What did I get?**  
+A clear roadmap for automated test scenario generation.
+
+---
+
+## Step 2: Extract Function Schema
+
+**Why:**  
+Relevant tests require understanding the code structure.
 
 **How:**  
 - Parse the target Python file using AST.
 - Extract function names, input arguments, types, and any rules from docstrings.
 
-**Result:**  
+**What did I get?**  
 A schema dictionary describing all functions and their inputs.
 
 ---
 
-## Step 2: Generate Test Cases with LLM
+## Step 3: Generate Test Cases with LLM
 
 **Why:**  
-Automate the creation of test scenarios for each function.
+Automate scenario design, improving coverage and reducing manual effort.
 
 **How:**  
 - Construct a prompt using the extracted schema.
-- Send the prompt to the LLM (Ollama API).
+- Send the prompt to the LLM (Ollama API, Llama 3).
 - Receive test cases as either a Python list or code block.
 
-**Result:**  
-Raw test case code or strings from the LLM.
+**What did I get?**  
+Actionable unit and integration test cases.
 
 ---
 
-## Step 3: Parse and Classify Test Cases
+## Step 4: Parse and Classify Test Cases
 
 **Why:**  
 Structure the LLM output for further processing and reporting.
@@ -41,12 +54,12 @@ Structure the LLM output for further processing and reporting.
 - Parse each block to get function name, description, input, and expected output.
 - Classify each test as unit, edge, or integration based on its description.
 
-**Result:**  
+**What did I get?**  
 A list of structured test case dictionaries.
 
 ---
 
-## Step 4: Render HTML Report
+## Step 5: Render HTML Report
 
 **Why:**  
 Visualize the generated test scenarios for review and documentation.
@@ -55,12 +68,12 @@ Visualize the generated test scenarios for review and documentation.
 - Render the structured test cases into an HTML table.
 - Include function name, input, expected output, description, and test type.
 
-**Result:**  
+**What did I get?**  
 An HTML report summarizing all generated test scenarios.
 
 ---
 
-## Step 5: Export to PDF
+## Step 6: Export to PDF
 
 **Why:**  
 Create a portable, shareable test report.
@@ -68,12 +81,12 @@ Create a portable, shareable test report.
 **How:**  
 - Convert the HTML report to PDF using pdfkit.
 
-**Result:**  
+**What did I get?**  
 A PDF file containing all generated test scenarios.
 
 ---
 
-## Step 6: Orchestration
+## Step 7: Orchestration
 
 **Why:**  
 Automate the entire workflow from code to test report.
@@ -82,7 +95,7 @@ Automate the entire workflow from code to test report.
 - Run `main.py <path_to_code_file>`.
 - The script executes all steps: extraction, LLM call, parsing, classification, rendering, and export.
 
-**Result:**  
+**What did I get?**  
 A fully automated pipeline for AI-generated test scenario documentation.
 
 ---

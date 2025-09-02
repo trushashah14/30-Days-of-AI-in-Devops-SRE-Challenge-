@@ -1,13 +1,13 @@
-# Day 24: Automated Test Scenario Generation 🚀 – Aug 31, 2025
+# Day 24: Automated Test Scenario Generation 🧪 – Aug 31, 2025
 
 ## Challenge Description 🎯
-Enable SRE/DevOps teams to automatically generate Python test scenarios for code changes using LLMs (Ollama + Llama 3). The workflow parses code, prompts the LLM, and produces a structured test report in HTML and PDF.
+Automate Python test scenario generation for code changes using LLMs (Ollama + Llama 3). The workflow parses code, prompts the LLM, and produces a structured test report in HTML and PDF.
 
 ## Objective 🚀
 - Extract function schemas from Python code
 - Generate actionable test cases using LLM
 - Classify, visualize, and export test scenarios
-- Automate the entire workflow for rapid feedback
+- Automate the workflow for rapid feedback
 
 ## Code & Implementation 💻
 - **Main Script:** [`main.py`](./main.py)  
