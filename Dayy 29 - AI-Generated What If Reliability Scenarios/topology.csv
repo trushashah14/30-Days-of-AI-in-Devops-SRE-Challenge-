@@ -1,0 +1,5 @@
+service,dependencies,criticality
+cdn,frontend;api,high
+db,api,high
+frontend,api,medium
+api,db,high

@@ -1,0 +1,6 @@
+date,service,type,impact,mitigation
+2025-08-01,cdn,network outage,major outage,reroute traffic
+2025-08-02,db,connection limit,partial outage,increase max connections
+2025-08-03,frontend,code bug,minor outage,rollback
+2025-08-04,api,latency spike,major outage,scale up
+2025-08-05,cdn,ddos,major outage,enable WAF
