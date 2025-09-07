@@ -4,6 +4,7 @@ import logging
 import os
 from sklearn.linear_model import LogisticRegression
 import numpy as np
+from scipy.stats import ttest_ind
 
 logging.basicConfig(level=logging.INFO)
 

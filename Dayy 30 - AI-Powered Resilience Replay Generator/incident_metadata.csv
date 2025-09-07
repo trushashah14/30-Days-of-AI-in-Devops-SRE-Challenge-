@@ -1,0 +1,4 @@
+timestamp,service,expected_sla
+2025-08-01T14:00:00,service-b,99.99
+2025-08-01T14:03:00,service-b,99.99
+2025-08-01T14:05:00,service-c,99.95
